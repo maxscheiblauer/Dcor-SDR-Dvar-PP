@@ -1,4 +1,4 @@
-# Projection pursuit with distance-based dependence measures — reproduction code
+# Projection pursuit with distance-based dependence measures: reproduction code
 
 This repository regenerates every number in the thesis it accompanies. It contains the
 methods, the simulators, the two real data sets, and one script per experiment. Each
@@ -24,7 +24,7 @@ results/     the CSVs behind the thesis tables; a rerun overwrites them in place
 |---|---|
 | `dpp.supervised` | distance correlation `dcor_u` (U-statistic, on the **squared** scale), its closed-form Riemannian gradient, the sphere and Stiefel optimisers, sequential projection pursuit with three deflation strategies, the joint search with the λ redundancy penalty, SIR and SAVE, the Sheng & Yin solver, the response-model simulator |
 | `dpp.unsupervised` | distance variance `dvar` and its gradient, the biloop transform, sequential and joint projection pursuit, whitening, the permutation test for the number of directions, the latent-factor simulator |
-| `realdata` | the Ludvigson–Ng data pipeline (`dataio`, `pca`), the forecasting second stage (`regression`), the forecast metrics including Diebold–Mariano (`metrics`), the unified dimension-reduction interface (`sdr_registry`), INPCA (`inpca`), and the shared machinery of the Chapter 6 studies (`dcorlin`, `recovery`, `holdout`) |
+| `realdata` | the Ludvigson-Ng data pipeline (`dataio`, `pca`), the forecasting second stage (`regression`), the forecast metrics including Diebold-Mariano (`metrics`), the unified dimension-reduction interface (`sdr_registry`), INPCA (`inpca`), and the shared machinery of the Chapter 6 studies (`dcorlin`, `recovery`, `holdout`) |
 | `designs` | two simulation designs shared by several drivers: the Sheng & Yin (2016) design and the shape-table draws |
 | `csvout` | the CSV writer every driver uses, and `pin_blas_threads` |
 
@@ -37,7 +37,7 @@ python scripts/ch03_gradient_check.py              # any driver, from the reposi
 ```
 
 Drivers put `src/` on `sys.path` themselves, so no installation is needed; `pip install
--e .` also works. Run them from the repository root or any directory — paths are
+-e .` also works. Run them from the repository root or any directory: paths are
 resolved from each file's own location, never from the working directory.
 
 There is deliberately no script that runs all of them. Each experiment is independent
@@ -60,7 +60,7 @@ command-line switch: changing a seed means editing the file, which is a visible 
 
 | seed list | used by |
 |---|---|
-| `42, 7, 123, 2024, 5, 2026, 17, 99, 777, 31337` | the Chapter 3 studies — a gradient identity should hold at every draw, so ten draws test it rather than one |
+| `42, 7, 123, 2024, 5, 2026, 17, 99, 777, 31337` | the Chapter 3 studies, where a gradient identity should hold at every draw, so ten draws test it rather than one |
 | `42, 7, 123, 2024, 5` | Chapters 4 and 5 |
 | `20260808, 7, 123` | `ch03_derivative_free.py`, at three seeds because each takes ~35 minutes |
 | `20260813` | base seed of the two Sheng & Yin design studies, which draw replicates rather than seeds |
@@ -81,7 +81,7 @@ Chapter numbers refer to the thesis. Runtimes are wall-clock from one run on one
 machine (see below) and are indicative only; they say which scripts are minutes and
 which are hours, nothing more.
 
-### Chapter 3 — the optimisers
+### Chapter 3: the optimisers
 
 | script | writes | runtime |
 |---|---|---|
@@ -90,7 +90,7 @@ which are hours, nothing more.
 | `ch03_degenerate_branch.py` | `results_degenerate_share.csv` | 1 min |
 | `ch03_derivative_free.py` | `results_derivative_free.csv` | **106 min** |
 
-### Chapter 4 — supervised projection pursuit, distance correlation
+### Chapter 4: supervised projection pursuit, distance correlation
 
 | script | writes | runtime |
 |---|---|---|
@@ -106,7 +106,7 @@ which are hours, nothing more.
 | `ch04_fair_comparison.py` | `results_fair_comparison.csv` | **57 min** |
 | `ch04_autompg.py` | `autompg_ch4.csv` | 2 min |
 
-### Chapter 5 — unsupervised projection pursuit, distance variance
+### Chapter 5: unsupervised projection pursuit, distance variance
 
 | script | writes | runtime |
 |---|---|---|
@@ -120,7 +120,7 @@ which are hours, nothing more.
 | `ch05_minimisation.py` | `results_minimisation.csv` | 6 min |
 | `ch05_shape_table.py` | `results_shape.csv` | 1 min |
 
-### Chapter 6 — excess bond returns
+### Chapter 6: excess bond returns
 
 `ch06_data_gate.py` comes first: it rebuilds the macro panel from the raw data and
 checks that the extracted factors reproduce Ludvigson & Ng's own published `Fhat_T` to
@@ -152,7 +152,7 @@ budget produced a false finding.
 **The machine these runtimes come from**: Intel Core Ultra 7 155H (16 cores, 22
 threads, 1.4 GHz base), 31.5 GB RAM, Windows 11, Python 3.12.10, BLAS pinned to one
 thread per the note above, joblib worker counts as each script sets them. Wall-clock
-will differ elsewhere — by a lot, on fewer cores. The *numbers* will not: worker count
+will differ elsewhere, often by a lot on fewer cores. The *numbers* will not: worker count
 changes how long a run takes, not what it returns, because each restart is independently
 seeded and joblib preserves result order.
 
@@ -176,15 +176,15 @@ diff <(grep -v '^#' old.csv) <(grep -v '^#' new.csv)
 ```
 
 On the environment in `requirements.txt` the statistical columns come back **character
-for character identical** — the reproduction is exact, not approximate. A difference
+for character identical**: the reproduction is exact, not approximate. A difference
 there means the environment moved, the thread pinning was defeated, or a seed was
 edited.
 
-The exception is the columns that record wall-clock time — `elapsed`, `time`,
+The exception is the columns that record wall-clock time: `elapsed`, `time`,
 `seconds`, `sy_seconds` and the cost ratios derived from them. Those measure the
 machine, not the method, and they do not reproduce: on a machine running two of these
 studies at once they came out up to 368 times the recorded value. Three scripts report
-a timing *comparison* as their result rather than as an aside —
+a timing *comparison* as their result rather than as an aside:
 `ch04_cost_scaling_n.py`, `ch04_shengyin_2016_design.py` and `ch04_fair_comparison.py`,
 which measure the gradient search against the sequential-quadratic-programming solver.
 Run those alone on an otherwise idle machine, or their ratios mean nothing. The
@@ -216,7 +216,7 @@ negative and the gradient of the square root is then undefined.
 | file | what it is |
 |---|---|
 | `LN2009_macro_panel_raw.csv` | the 131-series monthly macro panel of Ludvigson & Ng (2009), as exported from their replication archive; row 1 carries the per-series transformation codes |
-| `RFS2009.xls` | their published factors f1..f8, the Cochrane–Piazzesi factor, and the one-year excess bond returns yr2..yr5 for maturities 2 to 5 |
+| `RFS2009.xls` | their published factors f1..f8, the Cochrane-Piazzesi factor, and the one-year excess bond returns yr2..yr5 for maturities 2 to 5 |
 | `Fhat64.mat` | their own full-sample factor estimates, used only by `ch06_data_gate.py` as the reference the pipeline must reproduce |
 | `auto-mpg.data` | the AutoMPG data set from the UCI Machine Learning Repository, cached so the run needs no network; `ch04_autompg.py` re-downloads it from the UCI URL if the file is absent |
 
@@ -228,7 +228,7 @@ where a target twelve months ahead exists. The AutoMPG illustration has no split
 reports out-of-fold R² from five-fold cross-validation, and the distance correlation
 in-sample on all 392 complete rows.
 
-The three Ludvigson–Ng files are redistributed here so that the reproduction is
+The three Ludvigson-Ng files are redistributed here so that the reproduction is
 self-contained. They are their authors' material, not ours, and the MIT licence on the
 code does not extend to them.
 
@@ -236,12 +236,12 @@ code does not extend to them.
 
 | here | original |
 |---|---|
-| `src/dpp/supervised/sheng_yin.py` | The sequential-quadratic-programming solver of W. Sheng and X. Yin, *Direction estimation in single-index models via distance covariance*, Journal of Multivariate Analysis 122 (2013) 148–161, and *Sufficient dimension reduction via distance covariance*, Journal of Computational and Graphical Statistics 25(1) (2016) 91–104. Implemented in Python from the papers; it is not a translation of released code, and any discrepancy with their own implementation is ours. |
-| `src/realdata/dataio.py`, `src/realdata/pca.py` | Port of the MATLAB replication files of S. C. Ludvigson and S. Ng, *Macro factors in bond risk premia*, The Review of Financial Studies 22(12) (2009) 5027–5067. |
-| `src/realdata/inpca.py` | Implemented from F. Gunsilius and S. Schennach, *Independent nonlinear component analysis*, Journal of the American Statistical Association 118(542) (2023) 1305–1318. Entropic optimal transport via the POT package. |
-| the λ penalty in `dpp/supervised/joint_optimization.py` | The independent-component objective of D. S. Matteson and R. S. Tsay, *Independent component analysis via distance covariance*, JASA 112(518) (2017) 623–637, used here as a regulariser on a supervised objective. |
+| `src/dpp/supervised/sheng_yin.py` | The sequential-quadratic-programming solver of W. Sheng and X. Yin, *Direction estimation in single-index models via distance covariance*, Journal of Multivariate Analysis 122 (2013) 148-161, and *Sufficient dimension reduction via distance covariance*, Journal of Computational and Graphical Statistics 25(1) (2016) 91-104. Implemented in Python from the papers; it is not a translation of released code, and any discrepancy with their own implementation is ours. |
+| `src/realdata/dataio.py`, `src/realdata/pca.py` | Port of the MATLAB replication files of S. C. Ludvigson and S. Ng, *Macro factors in bond risk premia*, The Review of Financial Studies 22(12) (2009) 5027-5067. |
+| `src/realdata/inpca.py` | Implemented from F. Gunsilius and S. Schennach, *Independent nonlinear component analysis*, Journal of the American Statistical Association 118(542) (2023) 1305-1318. Entropic optimal transport via the POT package. |
+| the λ penalty in `dpp/supervised/joint_optimization.py` | The independent-component objective of D. S. Matteson and R. S. Tsay, *Independent component analysis via distance covariance*, JASA 112(518) (2017) 623-637, used here as a regulariser on a supervised objective. |
 | the biloop transform in `dpp/unsupervised/dvar_optimizer.py` | S. Leyder, J. Raymaekers and P. J. Rousseeuw, *Robust distance covariance*, International Statistical Review 94(1) (2026). |
-| distance covariance itself | G. J. Székely, M. L. Rizzo and N. K. Bakirov, *Measuring and testing dependence by correlation of distances*, The Annals of Statistics 35(6) (2007) 2769–2794. |
+| distance covariance itself | G. J. Székely, M. L. Rizzo and N. K. Bakirov, *Measuring and testing dependence by correlation of distances*, The Annals of Statistics 35(6) (2007) 2769-2794. |
 | `dcor` package | Used for the V-statistic distance correlation in the one place the biased estimator is intended, and as an independent check on `dcor_u`. |
 | `data/auto-mpg.data` | UCI Machine Learning Repository; the data set is due to R. Quinlan (1993). |
 
@@ -251,7 +251,7 @@ methods (Li 1991; Cook and Weisberg 1991), implemented here from the definitions
 ## What is new here
 
 Stated plainly, and bounded: closed-form Riemannian gradients for **both** indices, on
-the sphere and on the Stiefel manifold — the existing distance-covariance dimension
+the sphere and on the Stiefel manifold, where the existing distance-covariance dimension
 reduction literature avoids derivatives, using sequential quadratic programming (Sheng
 and Yin) or a difference-of-convex reformulation (Wu and Chen 2021); the pairwise
 dependence penalty used as a regulariser on a *supervised* objective, the penalty term
