@@ -1,0 +1,22 @@
+# script: ch05_shape_table.py
+# seeds: 20260808
+family,distribution,separation,dvar,dvar_sd,excess_kurtosis,excess_kurtosis_sd
+distribution,two-point,,0.9998,0.0001,-1.9999,0.0006
+distribution,bimodal mixture,,0.7539,0.0031,-1.2818,0.0189
+distribution,trimodal mixture,,0.7447,0.0023,-1.2617,0.0144
+distribution,four-component mixture,,0.7373,0.0018,-1.2269,0.0112
+distribution,uniform,,0.7294,0.0019,-1.1945,0.0126
+distribution,centred chi-squared(3),,0.5933,0.007,4.2203,0.9454
+distribution,Gaussian,,0.6348,0.003,-0.0354,0.0511
+distribution,centred exponential,,0.5754,0.0063,6.7576,1.6718
+distribution,Laplace,,0.5407,0.0038,2.7918,0.2629
+distribution,Student t3,,0.465,0.043,129.1883,309.1709
+distribution,lognormal,,0.4312,0.0203,57.7775,33.4639
+bimodal_separation,bimodal mixture,0.0,0.6306,0.0025,0.0316,0.0442
+bimodal_separation,bimodal mixture,1.0,0.6388,0.003,-0.1193,0.0565
+bimodal_separation,bimodal mixture,2.0,0.6661,0.003,-0.5059,0.0448
+bimodal_separation,bimodal mixture,3.0,0.7092,0.0029,-0.9499,0.0366
+bimodal_separation,bimodal mixture,4.0,0.754,0.0025,-1.2824,0.0148
+bimodal_separation,bimodal mixture,6.0,0.8192,0.0022,-1.619,0.0105
+bimodal_separation,bimodal mixture,8.0,0.8598,0.0013,-1.7702,0.0055
+bimodal_separation,bimodal mixture,12.0,0.9053,0.001,-1.8932,0.002

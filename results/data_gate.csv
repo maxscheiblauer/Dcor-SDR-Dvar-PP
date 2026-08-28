@@ -1,0 +1,14 @@
+# script: ch06_data_gate.py
+# seeds: 
+# gate: GATE1 |corr| > 0.999 against Fhat64.mat
+# gate1: PASS
+# gate2: differs on F3/F4/F6/F7 (distinct LN vintage)
+factor,abs_corr_vs_Fhat_T,abs_corr_vs_RFS_published
+F1,1.0,0.9980530988369405
+F2,1.0,0.9977334985939167
+F3,1.0,0.9242423881196903
+F4,1.0,0.9084507591753229
+F5,0.9999999999999998,0.9814173074982712
+F6,1.0,0.905807339205908
+F7,1.0,0.8986135583022946
+F8,0.9999999999999998,0.9832873310836225

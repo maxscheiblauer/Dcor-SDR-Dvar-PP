@@ -1,0 +1,711 @@
+# script: ch04_shengyin_on_our_grid.py
+# seeds: 42, 7, 123, 2024, 5
+# n_perturb: 500
+# n_restarts: 3
+# max_iter: 100
+part,seed,config,nonlinearity,noise,n,p,k,method,angle,dcor2_u,dcov_v,seconds
+single,42,square_p2_s0.0,square,0.0,200,2,1,dCor-PP (this thesis),1.4038,0.292588,0.387655,0.036
+single,42,square_p2_s0.0,square,0.0,200,2,1,Sheng-Yin (dcsol),1.0397,0.292554,0.387742,0.116
+single,42,square_p5_s0.0,square,0.0,200,5,1,dCor-PP (this thesis),1.4803,0.29734,0.383686,0.036
+single,42,square_p5_s0.0,square,0.0,200,5,1,Sheng-Yin (dcsol),1.4695,0.297231,0.384079,0.125
+single,42,square_p20_s0.0,square,0.0,200,20,1,dCor-PP (this thesis),8.9983,0.309429,0.374889,0.048
+single,42,square_p20_s0.0,square,0.0,200,20,1,Sheng-Yin (dcsol),6.9153,0.308074,0.376228,0.298
+single,42,square_p2_s0.5,square,0.5,200,2,1,dCor-PP (this thesis),0.706,0.243788,0.378129,0.039
+single,42,square_p2_s0.5,square,0.5,200,2,1,Sheng-Yin (dcsol),0.3935,0.243773,0.378203,0.106
+single,42,square_p5_s0.5,square,0.5,200,5,1,dCor-PP (this thesis),2.0385,0.239728,0.363295,0.041
+single,42,square_p5_s0.5,square,0.5,200,5,1,Sheng-Yin (dcsol),2.1485,0.239643,0.363668,0.116
+single,42,square_p20_s0.5,square,0.5,200,20,1,dCor-PP (this thesis),11.4284,0.233619,0.33766,0.044
+single,42,square_p20_s0.5,square,0.5,200,20,1,Sheng-Yin (dcsol),7.8959,0.232631,0.339869,0.356
+single,42,square_p2_s1.0,square,1.0,200,2,1,dCor-PP (this thesis),0.0099,0.181122,0.366735,0.034
+single,42,square_p2_s1.0,square,1.0,200,2,1,Sheng-Yin (dcsol),0.3847,0.181106,0.366814,0.106
+single,42,square_p5_s1.0,square,1.0,200,5,1,dCor-PP (this thesis),2.3061,0.168681,0.341205,0.041
+single,42,square_p5_s1.0,square,1.0,200,5,1,Sheng-Yin (dcsol),2.6907,0.168625,0.341445,0.12
+single,42,square_p20_s1.0,square,1.0,200,20,1,dCor-PP (this thesis),13.2546,0.149345,0.308032,0.054
+single,42,square_p20_s1.0,square,1.0,200,20,1,Sheng-Yin (dcsol),11.1627,0.148403,0.309596,0.348
+single,42,square_p2_s2.0,square,2.0,200,2,1,dCor-PP (this thesis),0.2872,0.101092,0.345507,0.038
+single,42,square_p2_s2.0,square,2.0,200,2,1,Sheng-Yin (dcsol),0.7176,0.101082,0.345588,0.108
+single,42,square_p5_s2.0,square,2.0,200,5,1,dCor-PP (this thesis),3.2045,0.085356,0.309223,0.033
+single,42,square_p5_s2.0,square,2.0,200,5,1,Sheng-Yin (dcsol),3.7064,0.085373,0.309599,0.113
+single,42,square_p20_s2.0,square,2.0,200,20,1,dCor-PP (this thesis),86.1473,0.086578,0.29242,0.044
+single,42,square_p20_s2.0,square,2.0,200,20,1,Sheng-Yin (dcsol),28.9234,0.07812,0.28842,0.317
+single,42,sine_p2_s0.0,sine,0.0,200,2,1,dCor-PP (this thesis),40.9003,0.00221,0.072786,0.016
+single,42,sine_p2_s0.0,sine,0.0,200,2,1,Sheng-Yin (dcsol),40.5428,0.002209,0.072802,0.105
+single,42,sine_p5_s0.0,sine,0.0,200,5,1,dCor-PP (this thesis),80.556,0.032398,0.12638,0.034
+single,42,sine_p5_s0.0,sine,0.0,200,5,1,Sheng-Yin (dcsol),80.132,0.032219,0.126332,0.116
+single,42,sine_p20_s0.0,sine,0.0,200,20,1,dCor-PP (this thesis),68.0279,0.13729,0.223079,0.048
+single,42,sine_p20_s0.0,sine,0.0,200,20,1,Sheng-Yin (dcsol),67.6522,0.134708,0.227631,0.285
+single,42,sine_p2_s0.5,sine,0.5,200,2,1,dCor-PP (this thesis),0.9939,0.022692,0.118979,0.026
+single,42,sine_p2_s0.5,sine,0.5,200,2,1,Sheng-Yin (dcsol),1.1646,0.02269,0.118988,0.11
+single,42,sine_p5_s0.5,sine,0.5,200,5,1,dCor-PP (this thesis),70.5579,0.046569,0.154466,0.036
+single,42,sine_p5_s0.5,sine,0.5,200,5,1,Sheng-Yin (dcsol),72.3688,0.046346,0.154826,0.111
+single,42,sine_p20_s0.5,sine,0.5,200,20,1,dCor-PP (this thesis),66.0539,0.114721,0.206046,0.046
+single,42,sine_p20_s0.5,sine,0.5,200,20,1,Sheng-Yin (dcsol),61.1946,0.108436,0.204843,0.287
+single,42,sine_p2_s1.0,sine,1.0,200,2,1,dCor-PP (this thesis),0.9911,0.011217,0.11617,0.027
+single,42,sine_p2_s1.0,sine,1.0,200,2,1,Sheng-Yin (dcsol),0.9871,0.011217,0.11617,0.113
+single,42,sine_p5_s1.0,sine,1.0,200,5,1,dCor-PP (this thesis),69.8806,0.042949,0.171491,0.03
+single,42,sine_p5_s1.0,sine,1.0,200,5,1,Sheng-Yin (dcsol),69.9689,0.0426,0.171438,0.12
+single,42,sine_p20_s1.0,sine,1.0,200,20,1,dCor-PP (this thesis),69.0568,0.079752,0.211044,0.05
+single,42,sine_p20_s1.0,sine,1.0,200,20,1,Sheng-Yin (dcsol),69.4706,0.079556,0.211039,0.301
+single,42,sine_p2_s2.0,sine,2.0,200,2,1,dCor-PP (this thesis),0.4653,0.00549,0.135029,0.025
+single,42,sine_p2_s2.0,sine,2.0,200,2,1,Sheng-Yin (dcsol),0.2681,0.00549,0.135047,0.104
+single,42,sine_p5_s2.0,sine,2.0,200,5,1,dCor-PP (this thesis),71.2098,0.034547,0.203906,0.037
+single,42,sine_p5_s2.0,sine,2.0,200,5,1,Sheng-Yin (dcsol),71.0938,0.034103,0.203578,0.114
+single,42,sine_p20_s2.0,sine,2.0,200,20,1,dCor-PP (this thesis),78.35,0.066253,0.243414,0.043
+single,42,sine_p20_s2.0,sine,2.0,200,20,1,Sheng-Yin (dcsol),74.5491,0.060584,0.23515,0.363
+single,42,abs_p2_s0.0,abs,0.0,200,2,1,dCor-PP (this thesis),0.9917,0.311914,0.284748,0.04
+single,42,abs_p2_s0.0,abs,0.0,200,2,1,Sheng-Yin (dcsol),0.7741,0.311899,0.28479,0.106
+single,42,abs_p5_s0.0,abs,0.0,200,5,1,dCor-PP (this thesis),1.4156,0.314229,0.286595,0.03
+single,42,abs_p5_s0.0,abs,0.0,200,5,1,Sheng-Yin (dcsol),1.3013,0.314115,0.28696,0.119
+single,42,abs_p20_s0.0,abs,0.0,200,20,1,dCor-PP (this thesis),7.8757,0.324,0.286303,0.05
+single,42,abs_p20_s0.0,abs,0.0,200,20,1,Sheng-Yin (dcsol),6.2159,0.323168,0.287798,0.312
+single,42,abs_p2_s0.5,abs,0.5,200,2,1,dCor-PP (this thesis),0.1088,0.191737,0.265965,0.027
+single,42,abs_p2_s0.5,abs,0.5,200,2,1,Sheng-Yin (dcsol),0.3638,0.191722,0.266004,0.109
+single,42,abs_p5_s0.5,abs,0.5,200,5,1,dCor-PP (this thesis),2.3938,0.184801,0.254434,0.031
+single,42,abs_p5_s0.5,abs,0.5,200,5,1,Sheng-Yin (dcsol),2.7126,0.184737,0.254698,0.114
+single,42,abs_p20_s0.5,abs,0.5,200,20,1,dCor-PP (this thesis),89.5355,0.112909,0.197727,0.052
+single,42,abs_p20_s0.5,abs,0.5,200,20,1,Sheng-Yin (dcsol),9.471,0.18191,0.240681,0.308
+single,42,abs_p2_s1.0,abs,1.0,200,2,1,dCor-PP (this thesis),0.4417,0.101986,0.243302,0.027
+single,42,abs_p2_s1.0,abs,1.0,200,2,1,Sheng-Yin (dcsol),0.9859,0.101971,0.243377,0.104
+single,42,abs_p5_s1.0,abs,1.0,200,5,1,dCor-PP (this thesis),3.5682,0.093201,0.225847,0.038
+single,42,abs_p5_s1.0,abs,1.0,200,5,1,Sheng-Yin (dcsol),3.6284,0.093174,0.226284,0.116
+single,42,abs_p20_s1.0,abs,1.0,200,20,1,dCor-PP (this thesis),87.0792,0.098171,0.221708,0.05
+single,42,abs_p20_s1.0,abs,1.0,200,20,1,Sheng-Yin (dcsol),21.2285,0.088336,0.210546,0.258
+single,42,abs_p2_s2.0,abs,2.0,200,2,1,dCor-PP (this thesis),0.9781,0.044485,0.229865,0.028
+single,42,abs_p2_s2.0,abs,2.0,200,2,1,Sheng-Yin (dcsol),1.0441,0.044486,0.229875,0.103
+single,42,abs_p5_s2.0,abs,2.0,200,5,1,dCor-PP (this thesis),4.0686,0.037749,0.210013,0.033
+single,42,abs_p5_s2.0,abs,2.0,200,5,1,Sheng-Yin (dcsol),4.633,0.037729,0.210251,0.13
+single,42,abs_p20_s2.0,abs,2.0,200,20,1,dCor-PP (this thesis),81.8274,0.082103,0.262125,0.047
+single,42,abs_p20_s2.0,abs,2.0,200,20,1,Sheng-Yin (dcsol),82.2679,0.081964,0.263872,0.414
+single,42,cubic_p2_s0.0,cubic,0.0,200,2,1,dCor-PP (this thesis),1.3071,0.745133,0.760262,0.046
+single,42,cubic_p2_s0.0,cubic,0.0,200,2,1,Sheng-Yin (dcsol),0.6127,0.745004,0.760605,0.105
+single,42,cubic_p5_s0.0,cubic,0.0,200,5,1,dCor-PP (this thesis),1.6455,0.770638,0.750626,0.04
+single,42,cubic_p5_s0.0,cubic,0.0,200,5,1,Sheng-Yin (dcsol),1.6406,0.769839,0.752363,0.112
+single,42,cubic_p20_s0.0,cubic,0.0,200,20,1,dCor-PP (this thesis),6.8447,0.802118,0.729993,0.049
+single,42,cubic_p20_s0.0,cubic,0.0,200,20,1,Sheng-Yin (dcsol),4.4055,0.795213,0.73384,0.302
+single,42,cubic_p2_s0.5,cubic,0.5,200,2,1,dCor-PP (this thesis),1.3585,0.642509,0.71872,0.039
+single,42,cubic_p2_s0.5,cubic,0.5,200,2,1,Sheng-Yin (dcsol),0.5799,0.642404,0.719086,0.103
+single,42,cubic_p5_s0.5,cubic,0.5,200,5,1,dCor-PP (this thesis),1.8903,0.717903,0.747307,0.043
+single,42,cubic_p5_s0.5,cubic,0.5,200,5,1,Sheng-Yin (dcsol),2.8375,0.717338,0.749188,0.113
+single,42,cubic_p20_s0.5,cubic,0.5,200,20,1,dCor-PP (this thesis),7.2032,0.735709,0.705703,0.055
+single,42,cubic_p20_s0.5,cubic,0.5,200,20,1,Sheng-Yin (dcsol),5.0143,0.729311,0.708383,0.275
+single,42,cubic_p2_s1.0,cubic,1.0,200,2,1,dCor-PP (this thesis),1.4661,0.507171,0.6785,0.04
+single,42,cubic_p2_s1.0,cubic,1.0,200,2,1,Sheng-Yin (dcsol),0.6233,0.507083,0.678867,0.104
+single,42,cubic_p5_s1.0,cubic,1.0,200,5,1,dCor-PP (this thesis),4.099,0.612151,0.741139,0.042
+single,42,cubic_p5_s1.0,cubic,1.0,200,5,1,Sheng-Yin (dcsol),4.9817,0.611735,0.742578,0.121
+single,42,cubic_p20_s1.0,cubic,1.0,200,20,1,dCor-PP (this thesis),10.6406,0.589591,0.669631,0.053
+single,42,cubic_p20_s1.0,cubic,1.0,200,20,1,Sheng-Yin (dcsol),8.5673,0.583599,0.671044,0.286
+single,42,cubic_p2_s2.0,cubic,2.0,200,2,1,dCor-PP (this thesis),2.0496,0.298289,0.612162,0.034
+single,42,cubic_p2_s2.0,cubic,2.0,200,2,1,Sheng-Yin (dcsol),1.1441,0.29821,0.61248,0.103
+single,42,cubic_p5_s2.0,cubic,2.0,200,5,1,dCor-PP (this thesis),7.4013,0.41805,0.714412,0.042
+single,42,cubic_p5_s2.0,cubic,2.0,200,5,1,Sheng-Yin (dcsol),8.0554,0.417886,0.715394,0.127
+single,42,cubic_p20_s2.0,cubic,2.0,200,20,1,dCor-PP (this thesis),19.4356,0.355606,0.609994,0.052
+single,42,cubic_p20_s2.0,cubic,2.0,200,20,1,Sheng-Yin (dcsol),17.3365,0.351663,0.61149,0.287
+single,42,tanh_p2_s0.0,tanh,0.0,200,2,1,dCor-PP (this thesis),0.7661,0.919548,0.610453,0.046
+single,42,tanh_p2_s0.0,tanh,0.0,200,2,1,Sheng-Yin (dcsol),1.681,0.919214,0.610795,0.103
+single,42,tanh_p5_s0.0,tanh,0.0,200,5,1,dCor-PP (this thesis),1.041,0.920297,0.613484,0.044
+single,42,tanh_p5_s0.0,tanh,0.0,200,5,1,Sheng-Yin (dcsol),1.9243,0.919539,0.614776,0.114
+single,42,tanh_p20_s0.0,tanh,0.0,200,20,1,dCor-PP (this thesis),5.4088,0.936831,0.618393,0.05
+single,42,tanh_p20_s0.0,tanh,0.0,200,20,1,Sheng-Yin (dcsol),8.5195,0.929398,0.621099,0.271
+single,42,tanh_p2_s0.5,tanh,0.5,200,2,1,dCor-PP (this thesis),0.8408,0.63697,0.497432,0.042
+single,42,tanh_p2_s0.5,tanh,0.5,200,2,1,Sheng-Yin (dcsol),1.9298,0.636699,0.497761,0.102
+single,42,tanh_p5_s0.5,tanh,0.5,200,5,1,dCor-PP (this thesis),3.8073,0.69552,0.539344,0.043
+single,42,tanh_p5_s0.5,tanh,0.5,200,5,1,Sheng-Yin (dcsol),4.6003,0.694966,0.540623,0.115
+single,42,tanh_p20_s0.5,tanh,0.5,200,20,1,dCor-PP (this thesis),10.0641,0.671912,0.52372,0.057
+single,42,tanh_p20_s0.5,tanh,0.5,200,20,1,Sheng-Yin (dcsol),12.1238,0.666497,0.524826,0.269
+single,42,tanh_p2_s1.0,tanh,1.0,200,2,1,dCor-PP (this thesis),0.5932,0.28997,0.387621,0.03
+single,42,tanh_p2_s1.0,tanh,1.0,200,2,1,Sheng-Yin (dcsol),1.9249,0.289823,0.387926,0.105
+single,42,tanh_p5_s1.0,tanh,1.0,200,5,1,dCor-PP (this thesis),6.9971,0.400461,0.461934,0.044
+single,42,tanh_p5_s1.0,tanh,1.0,200,5,1,Sheng-Yin (dcsol),7.8415,0.400077,0.462951,0.11
+single,42,tanh_p20_s1.0,tanh,1.0,200,20,1,dCor-PP (this thesis),15.0106,0.366256,0.432634,0.053
+single,42,tanh_p20_s1.0,tanh,1.0,200,20,1,Sheng-Yin (dcsol),15.7243,0.363098,0.433712,0.302
+single,42,tanh_p2_s2.0,tanh,2.0,200,2,1,dCor-PP (this thesis),3.8667,0.078918,0.281064,0.03
+single,42,tanh_p2_s2.0,tanh,2.0,200,2,1,Sheng-Yin (dcsol),1.0294,0.078835,0.281545,0.11
+single,42,tanh_p5_s2.0,tanh,2.0,200,5,1,dCor-PP (this thesis),12.8324,0.163884,0.388197,0.042
+single,42,tanh_p5_s2.0,tanh,2.0,200,5,1,Sheng-Yin (dcsol),13.8336,0.163726,0.388959,0.117
+single,42,tanh_p20_s2.0,tanh,2.0,200,20,1,dCor-PP (this thesis),34.2467,0.142891,0.347726,0.052
+single,42,tanh_p20_s2.0,tanh,2.0,200,20,1,Sheng-Yin (dcsol),33.9731,0.140727,0.348694,0.337
+single,7,square_p2_s0.0,square,0.0,200,2,1,dCor-PP (this thesis),0.2589,0.348624,0.378131,0.042
+single,7,square_p2_s0.0,square,0.0,200,2,1,Sheng-Yin (dcsol),0.0854,0.348576,0.378291,0.103
+single,7,square_p5_s0.0,square,0.0,200,5,1,dCor-PP (this thesis),2.6117,0.330486,0.381507,0.043
+single,7,square_p5_s0.0,square,0.0,200,5,1,Sheng-Yin (dcsol),2.7502,0.330421,0.381672,0.117
+single,7,square_p20_s0.0,square,0.0,200,20,1,dCor-PP (this thesis),6.7618,0.286384,0.335881,0.049
+single,7,square_p20_s0.0,square,0.0,200,20,1,Sheng-Yin (dcsol),5.8199,0.285188,0.335783,0.31
+single,7,square_p2_s0.5,square,0.5,200,2,1,dCor-PP (this thesis),1.9301,0.277719,0.354089,0.042
+single,7,square_p2_s0.5,square,0.5,200,2,1,Sheng-Yin (dcsol),2.1704,0.277699,0.354192,0.103
+single,7,square_p5_s0.5,square,0.5,200,5,1,dCor-PP (this thesis),7.0257,0.261105,0.348274,0.046
+single,7,square_p5_s0.5,square,0.5,200,5,1,Sheng-Yin (dcsol),6.7337,0.261068,0.348405,0.12
+single,7,square_p20_s0.5,square,0.5,200,20,1,dCor-PP (this thesis),11.4823,0.229316,0.321591,0.051
+single,7,square_p20_s0.5,square,0.5,200,20,1,Sheng-Yin (dcsol),9.5253,0.227789,0.32191,0.3
+single,7,square_p2_s1.0,square,1.0,200,2,1,dCor-PP (this thesis),3.6093,0.183206,0.326512,0.042
+single,7,square_p2_s1.0,square,1.0,200,2,1,Sheng-Yin (dcsol),3.9065,0.18319,0.326619,0.102
+single,7,square_p5_s1.0,square,1.0,200,5,1,dCor-PP (this thesis),12.2965,0.170558,0.316938,0.041
+single,7,square_p5_s1.0,square,1.0,200,5,1,Sheng-Yin (dcsol),12.034,0.170566,0.317052,0.113
+single,7,square_p20_s1.0,square,1.0,200,20,1,dCor-PP (this thesis),20.8957,0.161834,0.31103,0.045
+single,7,square_p20_s1.0,square,1.0,200,20,1,Sheng-Yin (dcsol),17.2561,0.160531,0.311717,0.326
+single,7,square_p2_s2.0,square,2.0,200,2,1,dCor-PP (this thesis),7.5492,0.086619,0.29255,0.038
+single,7,square_p2_s2.0,square,2.0,200,2,1,Sheng-Yin (dcsol),7.6274,0.086617,0.292572,0.104
+single,7,square_p5_s2.0,square,2.0,200,5,1,dCor-PP (this thesis),20.6525,0.087789,0.289868,0.042
+single,7,square_p5_s2.0,square,2.0,200,5,1,Sheng-Yin (dcsol),22.248,0.087803,0.289174,0.117
+single,7,square_p20_s2.0,square,2.0,200,20,1,dCor-PP (this thesis),65.0901,0.133578,0.333476,0.05
+single,7,square_p20_s2.0,square,2.0,200,20,1,Sheng-Yin (dcsol),66.7344,0.130944,0.333407,0.264
+single,7,sine_p2_s0.0,sine,0.0,200,2,1,dCor-PP (this thesis),0.5883,0.03327,0.121526,0.041
+single,7,sine_p2_s0.0,sine,0.0,200,2,1,Sheng-Yin (dcsol),0.6176,0.033269,0.12153,0.111
+single,7,sine_p5_s0.0,sine,0.0,200,5,1,dCor-PP (this thesis),72.9477,0.010218,0.086122,0.034
+single,7,sine_p5_s0.0,sine,0.0,200,5,1,Sheng-Yin (dcsol),74.2223,0.0102,0.08624,0.124
+single,7,sine_p20_s0.0,sine,0.0,200,20,1,dCor-PP (this thesis),74.2175,0.103794,0.198822,0.046
+single,7,sine_p20_s0.0,sine,0.0,200,20,1,Sheng-Yin (dcsol),75.3231,0.104383,0.200154,0.333
+single,7,sine_p2_s0.5,sine,0.5,200,2,1,dCor-PP (this thesis),1.0859,0.023007,0.112,0.023
+single,7,sine_p2_s0.5,sine,0.5,200,2,1,Sheng-Yin (dcsol),1.0037,0.023014,0.111997,0.107
+single,7,sine_p5_s0.5,sine,0.5,200,5,1,dCor-PP (this thesis),81.9322,0.010857,0.091998,0.034
+single,7,sine_p5_s0.5,sine,0.5,200,5,1,Sheng-Yin (dcsol),82.0118,0.010859,0.092026,0.12
+single,7,sine_p20_s0.5,sine,0.5,200,20,1,dCor-PP (this thesis),75.1681,0.155832,0.232498,0.053
+single,7,sine_p20_s0.5,sine,0.5,200,20,1,Sheng-Yin (dcsol),76.0996,0.154679,0.23312,0.373
+single,7,sine_p2_s1.0,sine,1.0,200,2,1,dCor-PP (this thesis),54.6084,0.008665,0.098685,0.032
+single,7,sine_p2_s1.0,sine,1.0,200,2,1,Sheng-Yin (dcsol),1.5004,0.011662,0.108205,0.102
+single,7,sine_p5_s1.0,sine,1.0,200,5,1,dCor-PP (this thesis),81.0247,0.010456,0.107341,0.026
+single,7,sine_p5_s1.0,sine,1.0,200,5,1,Sheng-Yin (dcsol),86.4788,0.005053,0.097412,0.125
+single,7,sine_p20_s1.0,sine,1.0,200,20,1,dCor-PP (this thesis),70.5832,0.181607,0.28327,0.056
+single,7,sine_p20_s1.0,sine,1.0,200,20,1,Sheng-Yin (dcsol),72.2292,0.179754,0.284466,0.279
+single,7,sine_p2_s2.0,sine,2.0,200,2,1,dCor-PP (this thesis),56.1108,0.006934,0.123041,0.026
+single,7,sine_p2_s2.0,sine,2.0,200,2,1,Sheng-Yin (dcsol),56.1924,0.006935,0.123052,0.104
+single,7,sine_p5_s2.0,sine,2.0,200,5,1,dCor-PP (this thesis),84.9004,0.016443,0.15636,0.03
+single,7,sine_p5_s2.0,sine,2.0,200,5,1,Sheng-Yin (dcsol),84.6149,0.016435,0.156499,0.131
+single,7,sine_p20_s2.0,sine,2.0,200,20,1,dCor-PP (this thesis),66.4453,0.178597,0.370367,0.05
+single,7,sine_p20_s2.0,sine,2.0,200,20,1,Sheng-Yin (dcsol),68.3663,0.176578,0.373016,0.334
+single,7,abs_p2_s0.0,abs,0.0,200,2,1,dCor-PP (this thesis),0.1891,0.359733,0.294379,0.047
+single,7,abs_p2_s0.0,abs,0.0,200,2,1,Sheng-Yin (dcsol),0.0679,0.359689,0.29447,0.107
+single,7,abs_p5_s0.0,abs,0.0,200,5,1,dCor-PP (this thesis),2.0343,0.350313,0.292756,0.049
+single,7,abs_p5_s0.0,abs,0.0,200,5,1,Sheng-Yin (dcsol),2.3876,0.350222,0.292824,0.113
+single,7,abs_p20_s0.0,abs,0.0,200,20,1,dCor-PP (this thesis),6.0179,0.305654,0.265631,0.049
+single,7,abs_p20_s0.0,abs,0.0,200,20,1,Sheng-Yin (dcsol),5.8076,0.304425,0.265761,0.347
+single,7,abs_p2_s0.5,abs,0.5,200,2,1,dCor-PP (this thesis),2.7417,0.215539,0.258172,0.041
+single,7,abs_p2_s0.5,abs,0.5,200,2,1,Sheng-Yin (dcsol),3.1377,0.215509,0.258288,0.103
+single,7,abs_p5_s0.5,abs,0.5,200,5,1,dCor-PP (this thesis),8.1994,0.197629,0.246671,0.045
+single,7,abs_p5_s0.5,abs,0.5,200,5,1,Sheng-Yin (dcsol),8.1588,0.197598,0.246645,0.113
+single,7,abs_p20_s0.5,abs,0.5,200,20,1,dCor-PP (this thesis),13.3626,0.187989,0.243516,0.055
+single,7,abs_p20_s0.5,abs,0.5,200,20,1,Sheng-Yin (dcsol),11.9314,0.187148,0.243797,0.32
+single,7,abs_p2_s1.0,abs,1.0,200,2,1,dCor-PP (this thesis),5.9239,0.103532,0.2242,0.039
+single,7,abs_p2_s1.0,abs,1.0,200,2,1,Sheng-Yin (dcsol),6.6245,0.10352,0.224378,0.104
+single,7,abs_p5_s1.0,abs,1.0,200,5,1,dCor-PP (this thesis),16.0041,0.094843,0.21094,0.047
+single,7,abs_p5_s1.0,abs,1.0,200,5,1,Sheng-Yin (dcsol),16.6095,0.094791,0.210799,0.118
+single,7,abs_p20_s1.0,abs,1.0,200,20,1,dCor-PP (this thesis),63.9037,0.125983,0.232325,0.048
+single,7,abs_p20_s1.0,abs,1.0,200,20,1,Sheng-Yin (dcsol),64.2289,0.124839,0.232698,0.319
+single,7,abs_p2_s2.0,abs,2.0,200,2,1,dCor-PP (this thesis),10.0303,0.038221,0.200029,0.025
+single,7,abs_p2_s2.0,abs,2.0,200,2,1,Sheng-Yin (dcsol),10.2628,0.038216,0.200074,0.104
+single,7,abs_p5_s2.0,abs,2.0,200,5,1,dCor-PP (this thesis),30.9753,0.041904,0.199739,0.046
+single,7,abs_p5_s2.0,abs,2.0,200,5,1,Sheng-Yin (dcsol),32.4679,0.041875,0.199464,0.114
+single,7,abs_p20_s2.0,abs,2.0,200,20,1,dCor-PP (this thesis),64.9944,0.137162,0.325919,0.05
+single,7,abs_p20_s2.0,abs,2.0,200,20,1,Sheng-Yin (dcsol),64.5763,0.133794,0.32783,0.303
+single,7,cubic_p2_s0.0,cubic,0.0,200,2,1,dCor-PP (this thesis),0.3752,0.780018,0.682083,0.045
+single,7,cubic_p2_s0.0,cubic,0.0,200,2,1,Sheng-Yin (dcsol),0.4797,0.779739,0.682791,0.107
+single,7,cubic_p5_s0.0,cubic,0.0,200,5,1,dCor-PP (this thesis),2.3484,0.730486,0.705747,0.047
+single,7,cubic_p5_s0.0,cubic,0.0,200,5,1,Sheng-Yin (dcsol),2.548,0.730102,0.706327,0.118
+single,7,cubic_p20_s0.0,cubic,0.0,200,20,1,dCor-PP (this thesis),5.7178,0.800125,0.666926,0.049
+single,7,cubic_p20_s0.0,cubic,0.0,200,20,1,Sheng-Yin (dcsol),3.9469,0.79272,0.668451,0.305
+single,7,cubic_p2_s0.5,cubic,0.5,200,2,1,dCor-PP (this thesis),1.6721,0.705099,0.662841,0.048
+single,7,cubic_p2_s0.5,cubic,0.5,200,2,1,Sheng-Yin (dcsol),0.7807,0.704846,0.663541,0.104
+single,7,cubic_p5_s0.5,cubic,0.5,200,5,1,dCor-PP (this thesis),3.4809,0.619304,0.674845,0.047
+single,7,cubic_p5_s0.5,cubic,0.5,200,5,1,Sheng-Yin (dcsol),4.3151,0.618935,0.675591,0.111
+single,7,cubic_p20_s0.5,cubic,0.5,200,20,1,dCor-PP (this thesis),9.9875,0.66308,0.627557,0.049
+single,7,cubic_p20_s0.5,cubic,0.5,200,20,1,Sheng-Yin (dcsol),9.3735,0.654045,0.629454,0.298
+single,7,cubic_p2_s1.0,cubic,1.0,200,2,1,dCor-PP (this thesis),2.4911,0.565757,0.636882,0.046
+single,7,cubic_p2_s1.0,cubic,1.0,200,2,1,Sheng-Yin (dcsol),1.709,0.565602,0.637457,0.105
+single,7,cubic_p5_s1.0,cubic,1.0,200,5,1,dCor-PP (this thesis),7.0555,0.481526,0.645323,0.039
+single,7,cubic_p5_s1.0,cubic,1.0,200,5,1,Sheng-Yin (dcsol),7.3609,0.481395,0.645466,0.131
+single,7,cubic_p20_s1.0,cubic,1.0,200,20,1,dCor-PP (this thesis),17.6846,0.494968,0.590811,0.05
+single,7,cubic_p20_s1.0,cubic,1.0,200,20,1,Sheng-Yin (dcsol),17.0167,0.487475,0.595776,0.296
+single,7,cubic_p2_s2.0,cubic,2.0,200,2,1,dCor-PP (this thesis),4.1646,0.343377,0.585628,0.04
+single,7,cubic_p2_s2.0,cubic,2.0,200,2,1,Sheng-Yin (dcsol),3.3866,0.343292,0.58613,0.102
+single,7,cubic_p5_s2.0,cubic,2.0,200,5,1,dCor-PP (this thesis),14.4165,0.294339,0.603853,0.035
+single,7,cubic_p5_s2.0,cubic,2.0,200,5,1,Sheng-Yin (dcsol),15.3321,0.294267,0.604328,0.111
+single,7,cubic_p20_s2.0,cubic,2.0,200,20,1,dCor-PP (this thesis),31.5221,0.307988,0.563559,0.051
+single,7,cubic_p20_s2.0,cubic,2.0,200,20,1,Sheng-Yin (dcsol),29.4295,0.302782,0.5703,0.3
+single,7,tanh_p2_s0.0,tanh,0.0,200,2,1,dCor-PP (this thesis),0.1995,0.926546,0.567074,0.047
+single,7,tanh_p2_s0.0,tanh,0.0,200,2,1,Sheng-Yin (dcsol),1.0063,0.926223,0.567641,0.104
+single,7,tanh_p5_s0.0,tanh,0.0,200,5,1,dCor-PP (this thesis),1.5158,0.933368,0.590154,0.045
+single,7,tanh_p5_s0.0,tanh,0.0,200,5,1,Sheng-Yin (dcsol),1.0329,0.932809,0.590696,0.116
+single,7,tanh_p20_s0.0,tanh,0.0,200,20,1,dCor-PP (this thesis),4.3001,0.953252,0.622897,0.053
+single,7,tanh_p20_s0.0,tanh,0.0,200,20,1,Sheng-Yin (dcsol),7.8027,0.94322,0.625988,0.263
+single,7,tanh_p2_s0.5,tanh,0.5,200,2,1,dCor-PP (this thesis),0.2127,0.662798,0.487412,0.044
+single,7,tanh_p2_s0.5,tanh,0.5,200,2,1,Sheng-Yin (dcsol),0.8248,0.662513,0.488039,0.108
+single,7,tanh_p5_s0.5,tanh,0.5,200,5,1,dCor-PP (this thesis),9.9893,0.65683,0.496606,0.047
+single,7,tanh_p5_s0.5,tanh,0.5,200,5,1,Sheng-Yin (dcsol),10.9066,0.656353,0.497151,0.114
+single,7,tanh_p20_s0.5,tanh,0.5,200,20,1,dCor-PP (this thesis),15.8425,0.732279,0.530671,0.053
+single,7,tanh_p20_s0.5,tanh,0.5,200,20,1,Sheng-Yin (dcsol),17.6816,0.723751,0.534348,0.292
+single,7,tanh_p2_s1.0,tanh,1.0,200,2,1,dCor-PP (this thesis),0.3924,0.358001,0.406191,0.042
+single,7,tanh_p2_s1.0,tanh,1.0,200,2,1,Sheng-Yin (dcsol),0.7615,0.357802,0.406753,0.107
+single,7,tanh_p5_s1.0,tanh,1.0,200,5,1,dCor-PP (this thesis),19.5602,0.334441,0.412947,0.042
+single,7,tanh_p5_s1.0,tanh,1.0,200,5,1,Sheng-Yin (dcsol),20.3752,0.334219,0.413039,0.116
+single,7,tanh_p20_s1.0,tanh,1.0,200,20,1,dCor-PP (this thesis),27.0971,0.397561,0.440074,0.052
+single,7,tanh_p20_s1.0,tanh,1.0,200,20,1,Sheng-Yin (dcsol),27.7211,0.392439,0.444973,0.339
+single,7,tanh_p2_s2.0,tanh,2.0,200,2,1,dCor-PP (this thesis),1.4197,0.125085,0.318066,0.037
+single,7,tanh_p2_s2.0,tanh,2.0,200,2,1,Sheng-Yin (dcsol),0.6391,0.124972,0.318848,0.103
+single,7,tanh_p5_s2.0,tanh,2.0,200,5,1,dCor-PP (this thesis),33.2745,0.126926,0.344079,0.042
+single,7,tanh_p5_s2.0,tanh,2.0,200,5,1,Sheng-Yin (dcsol),33.2534,0.126824,0.344185,0.115
+single,7,tanh_p20_s2.0,tanh,2.0,200,20,1,dCor-PP (this thesis),56.8938,0.19295,0.392751,0.05
+single,7,tanh_p20_s2.0,tanh,2.0,200,20,1,Sheng-Yin (dcsol),50.7962,0.189536,0.400477,0.292
+single,123,square_p2_s0.0,square,0.0,200,2,1,dCor-PP (this thesis),0.2717,0.303577,0.40197,0.033
+single,123,square_p2_s0.0,square,0.0,200,2,1,Sheng-Yin (dcsol),0.0463,0.303543,0.401993,0.105
+single,123,square_p5_s0.0,square,0.0,200,5,1,dCor-PP (this thesis),2.3111,0.297834,0.44698,0.036
+single,123,square_p5_s0.0,square,0.0,200,5,1,Sheng-Yin (dcsol),1.6559,0.297715,0.446962,0.123
+single,123,square_p20_s0.0,square,0.0,200,20,1,dCor-PP (this thesis),6.6639,0.272703,0.372687,0.054
+single,123,square_p20_s0.0,square,0.0,200,20,1,Sheng-Yin (dcsol),5.2434,0.271541,0.373261,0.351
+single,123,square_p2_s0.5,square,0.5,200,2,1,dCor-PP (this thesis),2.2943,0.240231,0.373623,0.027
+single,123,square_p2_s0.5,square,0.5,200,2,1,Sheng-Yin (dcsol),2.7956,0.240176,0.373664,0.104
+single,123,square_p5_s0.5,square,0.5,200,5,1,dCor-PP (this thesis),3.3791,0.240363,0.405266,0.041
+single,123,square_p5_s0.5,square,0.5,200,5,1,Sheng-Yin (dcsol),2.8395,0.240247,0.405207,0.118
+single,123,square_p20_s0.5,square,0.5,200,20,1,dCor-PP (this thesis),9.5393,0.219567,0.349239,0.052
+single,123,square_p20_s0.5,square,0.5,200,20,1,Sheng-Yin (dcsol),8.3381,0.218352,0.349947,0.3
+single,123,square_p2_s1.0,square,1.0,200,2,1,dCor-PP (this thesis),5.3286,0.161222,0.345237,0.031
+single,123,square_p2_s1.0,square,1.0,200,2,1,Sheng-Yin (dcsol),5.9792,0.161164,0.345285,0.108
+single,123,square_p5_s1.0,square,1.0,200,5,1,dCor-PP (this thesis),4.0906,0.166388,0.366773,0.035
+single,123,square_p5_s1.0,square,1.0,200,5,1,Sheng-Yin (dcsol),4.039,0.166343,0.366808,0.114
+single,123,square_p20_s1.0,square,1.0,200,20,1,dCor-PP (this thesis),13.5065,0.156966,0.330315,0.051
+single,123,square_p20_s1.0,square,1.0,200,20,1,Sheng-Yin (dcsol),12.758,0.156135,0.331,0.345
+single,123,square_p2_s2.0,square,2.0,200,2,1,dCor-PP (this thesis),9.5118,0.077941,0.311802,0.024
+single,123,square_p2_s2.0,square,2.0,200,2,1,Sheng-Yin (dcsol),9.9554,0.077922,0.311818,0.106
+single,123,square_p5_s2.0,square,2.0,200,5,1,dCor-PP (this thesis),13.7751,0.07594,0.315212,0.034
+single,123,square_p5_s2.0,square,2.0,200,5,1,Sheng-Yin (dcsol),13.0941,0.07593,0.315135,0.119
+single,123,square_p20_s2.0,square,2.0,200,20,1,dCor-PP (this thesis),70.6617,0.118423,0.343503,0.052
+single,123,square_p20_s2.0,square,2.0,200,20,1,Sheng-Yin (dcsol),66.7523,0.120023,0.352268,0.312
+single,123,sine_p2_s0.0,sine,0.0,200,2,1,dCor-PP (this thesis),1.2645,0.024755,0.116064,0.023
+single,123,sine_p2_s0.0,sine,0.0,200,2,1,Sheng-Yin (dcsol),69.304,0.006033,0.083117,0.105
+single,123,sine_p5_s0.0,sine,0.0,200,5,1,dCor-PP (this thesis),46.6745,0.069265,0.171319,0.039
+single,123,sine_p5_s0.0,sine,0.0,200,5,1,Sheng-Yin (dcsol),47.7778,0.069123,0.171176,0.114
+single,123,sine_p20_s0.0,sine,0.0,200,20,1,dCor-PP (this thesis),86.7234,0.141741,0.21988,0.049
+single,123,sine_p20_s0.0,sine,0.0,200,20,1,Sheng-Yin (dcsol),89.962,0.138117,0.222832,0.285
+single,123,sine_p2_s0.5,sine,0.5,200,2,1,dCor-PP (this thesis),1.4764,0.010032,0.096767,0.015
+single,123,sine_p2_s0.5,sine,0.5,200,2,1,Sheng-Yin (dcsol),1.4252,0.010033,0.096769,0.105
+single,123,sine_p5_s0.5,sine,0.5,200,5,1,dCor-PP (this thesis),69.6936,0.040684,0.14602,0.031
+single,123,sine_p5_s0.5,sine,0.5,200,5,1,Sheng-Yin (dcsol),67.8432,0.038958,0.146192,0.121
+single,123,sine_p20_s0.5,sine,0.5,200,20,1,dCor-PP (this thesis),79.352,0.115638,0.204364,0.051
+single,123,sine_p20_s0.5,sine,0.5,200,20,1,Sheng-Yin (dcsol),78.2471,0.11441,0.204504,0.277
+single,123,sine_p2_s1.0,sine,1.0,200,2,1,dCor-PP (this thesis),0.9153,0.000188,0.090696,0.014
+single,123,sine_p2_s1.0,sine,1.0,200,2,1,Sheng-Yin (dcsol),78.2232,0.0,0.088966,0.105
+single,123,sine_p5_s1.0,sine,1.0,200,5,1,dCor-PP (this thesis),74.1436,0.021378,0.135121,0.024
+single,123,sine_p5_s1.0,sine,1.0,200,5,1,Sheng-Yin (dcsol),81.1335,0.023803,0.144225,0.121
+single,123,sine_p20_s1.0,sine,1.0,200,20,1,dCor-PP (this thesis),65.5735,0.087142,0.218083,0.046
+single,123,sine_p20_s1.0,sine,1.0,200,20,1,Sheng-Yin (dcsol),81.3449,0.083349,0.211634,0.302
+single,123,sine_p2_s2.0,sine,2.0,200,2,1,dCor-PP (this thesis),81.5273,0.002959,0.129508,0.024
+single,123,sine_p2_s2.0,sine,2.0,200,2,1,Sheng-Yin (dcsol),81.8437,0.00297,0.129544,0.103
+single,123,sine_p5_s2.0,sine,2.0,200,5,1,dCor-PP (this thesis),42.9771,0.016582,0.169461,0.034
+single,123,sine_p5_s2.0,sine,2.0,200,5,1,Sheng-Yin (dcsol),46.9694,0.016208,0.167825,0.121
+single,123,sine_p20_s2.0,sine,2.0,200,20,1,dCor-PP (this thesis),60.7819,0.084758,0.289042,0.044
+single,123,sine_p20_s2.0,sine,2.0,200,20,1,Sheng-Yin (dcsol),57.5536,0.08408,0.28919,0.294
+single,123,abs_p2_s0.0,abs,0.0,200,2,1,dCor-PP (this thesis),0.2108,0.326068,0.296505,0.034
+single,123,abs_p2_s0.0,abs,0.0,200,2,1,Sheng-Yin (dcsol),0.4298,0.326042,0.296519,0.104
+single,123,abs_p5_s0.0,abs,0.0,200,5,1,dCor-PP (this thesis),1.244,0.322363,0.313649,0.042
+single,123,abs_p5_s0.0,abs,0.0,200,5,1,Sheng-Yin (dcsol),1.0092,0.322272,0.313597,0.117
+single,123,abs_p20_s0.0,abs,0.0,200,20,1,dCor-PP (this thesis),6.0579,0.289072,0.276052,0.054
+single,123,abs_p20_s0.0,abs,0.0,200,20,1,Sheng-Yin (dcsol),5.3834,0.287838,0.276512,0.378
+single,123,abs_p2_s0.5,abs,0.5,200,2,1,dCor-PP (this thesis),4.6707,0.178835,0.254649,0.023
+single,123,abs_p2_s0.5,abs,0.5,200,2,1,Sheng-Yin (dcsol),5.2706,0.178777,0.254692,0.107
+single,123,abs_p5_s0.5,abs,0.5,200,5,1,dCor-PP (this thesis),3.8302,0.169268,0.250333,0.034
+single,123,abs_p5_s0.5,abs,0.5,200,5,1,Sheng-Yin (dcsol),3.1273,0.169171,0.250252,0.129
+single,123,abs_p20_s0.5,abs,0.5,200,20,1,dCor-PP (this thesis),13.5215,0.178056,0.246861,0.052
+single,123,abs_p20_s0.5,abs,0.5,200,20,1,Sheng-Yin (dcsol),12.3573,0.177132,0.247465,0.289
+single,123,abs_p2_s1.0,abs,1.0,200,2,1,dCor-PP (this thesis),8.0647,0.081802,0.221773,0.025
+single,123,abs_p2_s1.0,abs,1.0,200,2,1,Sheng-Yin (dcsol),8.6507,0.081768,0.221799,0.105
+single,123,abs_p5_s1.0,abs,1.0,200,5,1,dCor-PP (this thesis),13.2688,0.068167,0.204427,0.042
+single,123,abs_p5_s1.0,abs,1.0,200,5,1,Sheng-Yin (dcsol),13.064,0.068169,0.204399,0.116
+single,123,abs_p20_s1.0,abs,1.0,200,20,1,dCor-PP (this thesis),69.6632,0.127953,0.25041,0.045
+single,123,abs_p20_s1.0,abs,1.0,200,20,1,Sheng-Yin (dcsol),67.5491,0.128187,0.251753,0.284
+single,123,abs_p2_s2.0,abs,2.0,200,2,1,dCor-PP (this thesis),14.5323,0.030957,0.206617,0.021
+single,123,abs_p2_s2.0,abs,2.0,200,2,1,Sheng-Yin (dcsol),14.7762,0.030952,0.206625,0.106
+single,123,abs_p5_s2.0,abs,2.0,200,5,1,dCor-PP (this thesis),52.058,0.031947,0.198861,0.047
+single,123,abs_p5_s2.0,abs,2.0,200,5,1,Sheng-Yin (dcsol),54.9045,0.031771,0.198459,0.123
+single,123,abs_p20_s2.0,abs,2.0,200,20,1,dCor-PP (this thesis),66.596,0.106325,0.316735,0.054
+single,123,abs_p20_s2.0,abs,2.0,200,20,1,Sheng-Yin (dcsol),63.7857,0.102142,0.315481,0.326
+single,123,cubic_p2_s0.0,cubic,0.0,200,2,1,dCor-PP (this thesis),0.5906,0.753151,0.78132,0.032
+single,123,cubic_p2_s0.0,cubic,0.0,200,2,1,Sheng-Yin (dcsol),0.1298,0.752979,0.781442,0.107
+single,123,cubic_p5_s0.0,cubic,0.0,200,5,1,dCor-PP (this thesis),2.5247,0.719351,0.900139,0.044
+single,123,cubic_p5_s0.0,cubic,0.0,200,5,1,Sheng-Yin (dcsol),1.3786,0.718578,0.899792,0.118
+single,123,cubic_p20_s0.0,cubic,0.0,200,20,1,dCor-PP (this thesis),6.5816,0.777444,0.784006,0.052
+single,123,cubic_p20_s0.0,cubic,0.0,200,20,1,Sheng-Yin (dcsol),3.2537,0.768106,0.786981,0.337
+single,123,cubic_p2_s0.5,cubic,0.5,200,2,1,dCor-PP (this thesis),0.469,0.67635,0.752482,0.033
+single,123,cubic_p2_s0.5,cubic,0.5,200,2,1,Sheng-Yin (dcsol),1.3952,0.67614,0.75264,0.106
+single,123,cubic_p5_s0.5,cubic,0.5,200,5,1,dCor-PP (this thesis),4.7145,0.670219,0.87351,0.049
+single,123,cubic_p5_s0.5,cubic,0.5,200,5,1,Sheng-Yin (dcsol),3.4015,0.669345,0.872722,0.116
+single,123,cubic_p20_s0.5,cubic,0.5,200,20,1,dCor-PP (this thesis),7.6021,0.726976,0.7862,0.052
+single,123,cubic_p20_s0.5,cubic,0.5,200,20,1,Sheng-Yin (dcsol),7.7494,0.717831,0.788453,0.293
+single,123,cubic_p2_s1.0,cubic,1.0,200,2,1,dCor-PP (this thesis),1.7599,0.553255,0.719418,0.03
+single,123,cubic_p2_s1.0,cubic,1.0,200,2,1,Sheng-Yin (dcsol),2.8352,0.552993,0.719596,0.104
+single,123,cubic_p5_s1.0,cubic,1.0,200,5,1,dCor-PP (this thesis),6.5336,0.584028,0.843541,0.043
+single,123,cubic_p5_s1.0,cubic,1.0,200,5,1,Sheng-Yin (dcsol),5.2616,0.583429,0.842824,0.118
+single,123,cubic_p20_s1.0,cubic,1.0,200,20,1,dCor-PP (this thesis),10.7786,0.627926,0.783042,0.049
+single,123,cubic_p20_s1.0,cubic,1.0,200,20,1,Sheng-Yin (dcsol),12.2468,0.618716,0.784959,0.268
+single,123,cubic_p2_s2.0,cubic,2.0,200,2,1,dCor-PP (this thesis),4.9078,0.342351,0.659319,0.03
+single,123,cubic_p2_s2.0,cubic,2.0,200,2,1,Sheng-Yin (dcsol),6.05,0.342157,0.659494,0.106
+single,123,cubic_p5_s2.0,cubic,2.0,200,5,1,dCor-PP (this thesis),8.8302,0.417695,0.793935,0.04
+single,123,cubic_p5_s2.0,cubic,2.0,200,5,1,Sheng-Yin (dcsol),8.6697,0.417429,0.793323,0.113
+single,123,cubic_p20_s2.0,cubic,2.0,200,20,1,dCor-PP (this thesis),17.2719,0.456829,0.778158,0.049
+single,123,cubic_p20_s2.0,cubic,2.0,200,20,1,Sheng-Yin (dcsol),18.6305,0.450505,0.779683,0.308
+single,123,tanh_p2_s0.0,tanh,0.0,200,2,1,dCor-PP (this thesis),0.1055,0.918686,0.612575,0.04
+single,123,tanh_p2_s0.0,tanh,0.0,200,2,1,Sheng-Yin (dcsol),0.6032,0.918425,0.612678,0.104
+single,123,tanh_p5_s0.0,tanh,0.0,200,5,1,dCor-PP (this thesis),0.8548,0.911497,0.633721,0.048
+single,123,tanh_p5_s0.0,tanh,0.0,200,5,1,Sheng-Yin (dcsol),2.5898,0.909904,0.63323,0.121
+single,123,tanh_p20_s0.0,tanh,0.0,200,20,1,dCor-PP (this thesis),4.1975,0.939136,0.664676,0.054
+single,123,tanh_p20_s0.0,tanh,0.0,200,20,1,Sheng-Yin (dcsol),9.3895,0.925748,0.667157,0.3
+single,123,tanh_p2_s0.5,tanh,0.5,200,2,1,dCor-PP (this thesis),1.1086,0.638157,0.495028,0.037
+single,123,tanh_p2_s0.5,tanh,0.5,200,2,1,Sheng-Yin (dcsol),0.1793,0.637923,0.495149,0.105
+single,123,tanh_p5_s0.5,tanh,0.5,200,5,1,dCor-PP (this thesis),1.8532,0.642802,0.516921,0.052
+single,123,tanh_p5_s0.5,tanh,0.5,200,5,1,Sheng-Yin (dcsol),2.3231,0.641669,0.516514,0.109
+single,123,tanh_p20_s0.5,tanh,0.5,200,20,1,dCor-PP (this thesis),9.3535,0.746631,0.606844,0.048
+single,123,tanh_p20_s0.5,tanh,0.5,200,20,1,Sheng-Yin (dcsol),14.2471,0.735355,0.608438,0.37
+single,123,tanh_p2_s1.0,tanh,1.0,200,2,1,dCor-PP (this thesis),1.259,0.280266,0.377159,0.023
+single,123,tanh_p2_s1.0,tanh,1.0,200,2,1,Sheng-Yin (dcsol),0.0426,0.280098,0.377287,0.105
+single,123,tanh_p5_s1.0,tanh,1.0,200,5,1,dCor-PP (this thesis),4.0486,0.29239,0.393691,0.041
+single,123,tanh_p5_s1.0,tanh,1.0,200,5,1,Sheng-Yin (dcsol),3.9956,0.291926,0.393332,0.116
+single,123,tanh_p20_s1.0,tanh,1.0,200,20,1,dCor-PP (this thesis),15.5948,0.484909,0.549805,0.043
+single,123,tanh_p20_s1.0,tanh,1.0,200,20,1,Sheng-Yin (dcsol),19.6147,0.478099,0.55066,0.262
+single,123,tanh_p2_s2.0,tanh,2.0,200,2,1,dCor-PP (this thesis),6.0954,0.063619,0.259293,0.025
+single,123,tanh_p2_s2.0,tanh,2.0,200,2,1,Sheng-Yin (dcsol),8.6259,0.063531,0.259556,0.109
+single,123,tanh_p5_s2.0,tanh,2.0,200,5,1,dCor-PP (this thesis),7.0518,0.068574,0.266491,0.04
+single,123,tanh_p5_s2.0,tanh,2.0,200,5,1,Sheng-Yin (dcsol),6.935,0.068553,0.266439,0.119
+single,123,tanh_p20_s2.0,tanh,2.0,200,20,1,dCor-PP (this thesis),28.0648,0.256567,0.510655,0.051
+single,123,tanh_p20_s2.0,tanh,2.0,200,20,1,Sheng-Yin (dcsol),28.4686,0.252985,0.511286,0.296
+single,2024,square_p2_s0.0,square,0.0,200,2,1,dCor-PP (this thesis),0.1201,0.301935,0.406823,0.029
+single,2024,square_p2_s0.0,square,0.0,200,2,1,Sheng-Yin (dcsol),0.3027,0.301925,0.406816,0.108
+single,2024,square_p5_s0.0,square,0.0,200,5,1,dCor-PP (this thesis),5.9141,0.286565,0.383881,0.044
+single,2024,square_p5_s0.0,square,0.0,200,5,1,Sheng-Yin (dcsol),4.6631,0.286086,0.383521,0.137
+single,2024,square_p20_s0.0,square,0.0,200,20,1,dCor-PP (this thesis),15.766,0.310032,0.399158,0.05
+single,2024,square_p20_s0.0,square,0.0,200,20,1,Sheng-Yin (dcsol),7.9001,0.319778,0.409077,0.314
+single,2024,square_p2_s0.5,square,0.5,200,2,1,dCor-PP (this thesis),0.4494,0.255989,0.383186,0.03
+single,2024,square_p2_s0.5,square,0.5,200,2,1,Sheng-Yin (dcsol),0.183,0.255977,0.383176,0.104
+single,2024,square_p5_s0.5,square,0.5,200,5,1,dCor-PP (this thesis),6.3591,0.231142,0.371797,0.042
+single,2024,square_p5_s0.5,square,0.5,200,5,1,Sheng-Yin (dcsol),5.2616,0.230741,0.371485,0.109
+single,2024,square_p20_s0.5,square,0.5,200,20,1,dCor-PP (this thesis),35.1974,0.229811,0.354213,0.053
+single,2024,square_p20_s0.5,square,0.5,200,20,1,Sheng-Yin (dcsol),13.1106,0.27098,0.384984,0.369
+single,2024,square_p2_s1.0,square,1.0,200,2,1,dCor-PP (this thesis),1.0671,0.184764,0.357832,0.027
+single,2024,square_p2_s1.0,square,1.0,200,2,1,Sheng-Yin (dcsol),0.7915,0.184757,0.357822,0.108
+single,2024,square_p5_s1.0,square,1.0,200,5,1,dCor-PP (this thesis),7.3819,0.166995,0.357514,0.047
+single,2024,square_p5_s1.0,square,1.0,200,5,1,Sheng-Yin (dcsol),6.6144,0.166666,0.357202,0.116
+single,2024,square_p20_s1.0,square,1.0,200,20,1,dCor-PP (this thesis),31.0411,0.193454,0.356997,0.053
+single,2024,square_p20_s1.0,square,1.0,200,20,1,Sheng-Yin (dcsol),18.8682,0.198985,0.362988,0.348
+single,2024,square_p2_s2.0,square,2.0,200,2,1,dCor-PP (this thesis),1.4379,0.092863,0.319712,0.023
+single,2024,square_p2_s2.0,square,2.0,200,2,1,Sheng-Yin (dcsol),1.3783,0.092862,0.319711,0.105
+single,2024,square_p5_s2.0,square,2.0,200,5,1,dCor-PP (this thesis),10.116,0.094448,0.342089,0.042
+single,2024,square_p5_s2.0,square,2.0,200,5,1,Sheng-Yin (dcsol),10.0978,0.094342,0.341852,0.127
+single,2024,square_p20_s2.0,square,2.0,200,20,1,dCor-PP (this thesis),77.1614,0.138338,0.368732,0.05
+single,2024,square_p20_s2.0,square,2.0,200,20,1,Sheng-Yin (dcsol),77.0199,0.137631,0.367538,0.373
+single,2024,sine_p2_s0.0,sine,0.0,200,2,1,dCor-PP (this thesis),0.6738,0.01703,0.100317,0.02
+single,2024,sine_p2_s0.0,sine,0.0,200,2,1,Sheng-Yin (dcsol),81.0464,0.004821,0.076948,0.103
+single,2024,sine_p5_s0.0,sine,0.0,200,5,1,dCor-PP (this thesis),48.2501,0.033507,0.124424,0.04
+single,2024,sine_p5_s0.0,sine,0.0,200,5,1,Sheng-Yin (dcsol),48.428,0.033015,0.125627,0.113
+single,2024,sine_p20_s0.0,sine,0.0,200,20,1,dCor-PP (this thesis),76.7428,0.094923,0.186398,0.044
+single,2024,sine_p20_s0.0,sine,0.0,200,20,1,Sheng-Yin (dcsol),77.4964,0.094398,0.187307,0.241
+single,2024,sine_p2_s0.5,sine,0.5,200,2,1,dCor-PP (this thesis),0.0819,0.012352,0.098757,0.017
+single,2024,sine_p2_s0.5,sine,0.5,200,2,1,Sheng-Yin (dcsol),77.9575,0.007626,0.088173,0.104
+single,2024,sine_p5_s0.5,sine,0.5,200,5,1,dCor-PP (this thesis),65.1718,0.058809,0.162493,0.034
+single,2024,sine_p5_s0.5,sine,0.5,200,5,1,Sheng-Yin (dcsol),65.1913,0.05882,0.1625,0.117
+single,2024,sine_p20_s0.5,sine,0.5,200,20,1,dCor-PP (this thesis),84.0973,0.079102,0.183438,0.052
+single,2024,sine_p20_s0.5,sine,0.5,200,20,1,Sheng-Yin (dcsol),89.7775,0.074517,0.179151,0.346
+single,2024,sine_p2_s1.0,sine,1.0,200,2,1,dCor-PP (this thesis),75.655,0.006113,0.099911,0.017
+single,2024,sine_p2_s1.0,sine,1.0,200,2,1,Sheng-Yin (dcsol),75.4239,0.006116,0.09992,0.107
+single,2024,sine_p5_s1.0,sine,1.0,200,5,1,dCor-PP (this thesis),86.4044,0.073433,0.215098,0.039
+single,2024,sine_p5_s1.0,sine,1.0,200,5,1,Sheng-Yin (dcsol),85.898,0.073459,0.215015,0.117
+single,2024,sine_p20_s1.0,sine,1.0,200,20,1,dCor-PP (this thesis),85.0998,0.099839,0.236424,0.052
+single,2024,sine_p20_s1.0,sine,1.0,200,20,1,Sheng-Yin (dcsol),89.3722,0.098066,0.229502,0.286
+single,2024,sine_p2_s2.0,sine,2.0,200,2,1,dCor-PP (this thesis),9.6897,0.003254,0.124955,0.019
+single,2024,sine_p2_s2.0,sine,2.0,200,2,1,Sheng-Yin (dcsol),46.1658,0.001914,0.118811,0.107
+single,2024,sine_p5_s2.0,sine,2.0,200,5,1,dCor-PP (this thesis),83.1638,0.069982,0.28145,0.036
+single,2024,sine_p5_s2.0,sine,2.0,200,5,1,Sheng-Yin (dcsol),82.8076,0.070003,0.281684,0.117
+single,2024,sine_p20_s2.0,sine,2.0,200,20,1,dCor-PP (this thesis),87.5596,0.120274,0.336132,0.052
+single,2024,sine_p20_s2.0,sine,2.0,200,20,1,Sheng-Yin (dcsol),87.789,0.128501,0.337855,0.309
+single,2024,abs_p2_s0.0,abs,0.0,200,2,1,dCor-PP (this thesis),0.1345,0.325311,0.288904,0.039
+single,2024,abs_p2_s0.0,abs,0.0,200,2,1,Sheng-Yin (dcsol),0.0527,0.325297,0.288899,0.116
+single,2024,abs_p5_s0.0,abs,0.0,200,5,1,dCor-PP (this thesis),5.6098,0.302719,0.282247,0.047
+single,2024,abs_p5_s0.0,abs,0.0,200,5,1,Sheng-Yin (dcsol),4.5537,0.302347,0.28209,0.137
+single,2024,abs_p20_s0.0,abs,0.0,200,20,1,dCor-PP (this thesis),15.0083,0.319077,0.284532,0.056
+single,2024,abs_p20_s0.0,abs,0.0,200,20,1,Sheng-Yin (dcsol),6.9271,0.333923,0.294673,0.366
+single,2024,abs_p2_s0.5,abs,0.5,200,2,1,dCor-PP (this thesis),1.0276,0.191087,0.250614,0.031
+single,2024,abs_p2_s0.5,abs,0.5,200,2,1,Sheng-Yin (dcsol),0.7314,0.191075,0.250608,0.113
+single,2024,abs_p5_s0.5,abs,0.5,200,5,1,dCor-PP (this thesis),7.0787,0.182891,0.263784,0.05
+single,2024,abs_p5_s0.5,abs,0.5,200,5,1,Sheng-Yin (dcsol),6.4733,0.182596,0.26357,0.122
+single,2024,abs_p20_s0.5,abs,0.5,200,20,1,dCor-PP (this thesis),34.2607,0.185486,0.247144,0.061
+single,2024,abs_p20_s0.5,abs,0.5,200,20,1,Sheng-Yin (dcsol),15.4246,0.202691,0.257698,0.374
+single,2024,abs_p2_s1.0,abs,1.0,200,2,1,dCor-PP (this thesis),0.6246,0.082237,0.208539,0.025
+single,2024,abs_p2_s1.0,abs,1.0,200,2,1,Sheng-Yin (dcsol),0.2513,0.08223,0.208536,0.116
+single,2024,abs_p5_s1.0,abs,1.0,200,5,1,dCor-PP (this thesis),9.7673,0.10215,0.247248,0.045
+single,2024,abs_p5_s1.0,abs,1.0,200,5,1,Sheng-Yin (dcsol),9.9249,0.102049,0.247127,0.119
+single,2024,abs_p20_s1.0,abs,1.0,200,20,1,dCor-PP (this thesis),79.5798,0.131831,0.253603,0.041
+single,2024,abs_p20_s1.0,abs,1.0,200,20,1,Sheng-Yin (dcsol),73.31,0.13276,0.260453,0.342
+single,2024,abs_p2_s2.0,abs,2.0,200,2,1,dCor-PP (this thesis),3.1662,0.021719,0.171491,0.021
+single,2024,abs_p2_s2.0,abs,2.0,200,2,1,Sheng-Yin (dcsol),3.3631,0.021718,0.171496,0.116
+single,2024,abs_p5_s2.0,abs,2.0,200,5,1,dCor-PP (this thesis),15.9171,0.053374,0.251991,0.049
+single,2024,abs_p5_s2.0,abs,2.0,200,5,1,Sheng-Yin (dcsol),15.465,0.053315,0.251446,0.124
+single,2024,abs_p20_s2.0,abs,2.0,200,20,1,dCor-PP (this thesis),82.3251,0.120297,0.324407,0.05
+single,2024,abs_p20_s2.0,abs,2.0,200,20,1,Sheng-Yin (dcsol),81.9997,0.118871,0.328764,0.324
+single,2024,cubic_p2_s0.0,cubic,0.0,200,2,1,dCor-PP (this thesis),0.3836,0.686947,0.782047,0.032
+single,2024,cubic_p2_s0.0,cubic,0.0,200,2,1,Sheng-Yin (dcsol),0.9008,0.686881,0.782019,0.111
+single,2024,cubic_p5_s0.0,cubic,0.0,200,5,1,dCor-PP (this thesis),4.8116,0.762489,0.776355,0.055
+single,2024,cubic_p5_s0.0,cubic,0.0,200,5,1,Sheng-Yin (dcsol),2.1655,0.759935,0.77485,0.124
+single,2024,cubic_p20_s0.0,cubic,0.0,200,20,1,dCor-PP (this thesis),8.2687,0.734773,0.79367,0.055
+single,2024,cubic_p20_s0.0,cubic,0.0,200,20,1,Sheng-Yin (dcsol),5.0696,0.727471,0.797176,0.381
+single,2024,cubic_p2_s0.5,cubic,0.5,200,2,1,dCor-PP (this thesis),1.1568,0.614081,0.750689,0.031
+single,2024,cubic_p2_s0.5,cubic,0.5,200,2,1,Sheng-Yin (dcsol),1.8767,0.613976,0.750648,0.109
+single,2024,cubic_p5_s0.5,cubic,0.5,200,5,1,dCor-PP (this thesis),5.2468,0.683868,0.742288,0.05
+single,2024,cubic_p5_s0.5,cubic,0.5,200,5,1,Sheng-Yin (dcsol),3.8579,0.681798,0.741016,0.124
+single,2024,cubic_p20_s0.5,cubic,0.5,200,20,1,dCor-PP (this thesis),11.7432,0.671735,0.768365,0.051
+single,2024,cubic_p20_s0.5,cubic,0.5,200,20,1,Sheng-Yin (dcsol),8.8153,0.663711,0.771772,0.409
+single,2024,cubic_p2_s1.0,cubic,1.0,200,2,1,dCor-PP (this thesis),1.9098,0.513841,0.720906,0.033
+single,2024,cubic_p2_s1.0,cubic,1.0,200,2,1,Sheng-Yin (dcsol),1.9906,0.513838,0.720906,0.118
+single,2024,cubic_p5_s1.0,cubic,1.0,200,5,1,dCor-PP (this thesis),6.8341,0.552459,0.704204,0.05
+single,2024,cubic_p5_s1.0,cubic,1.0,200,5,1,Sheng-Yin (dcsol),6.8545,0.550668,0.702963,0.112
+single,2024,cubic_p20_s1.0,cubic,1.0,200,20,1,dCor-PP (this thesis),16.9124,0.577103,0.744536,0.052
+single,2024,cubic_p20_s1.0,cubic,1.0,200,20,1,Sheng-Yin (dcsol),13.8889,0.567862,0.748725,0.306
+single,2024,cubic_p2_s2.0,cubic,2.0,200,2,1,dCor-PP (this thesis),2.1344,0.343004,0.671726,0.027
+single,2024,cubic_p2_s2.0,cubic,2.0,200,2,1,Sheng-Yin (dcsol),2.9648,0.342947,0.671685,0.103
+single,2024,cubic_p5_s2.0,cubic,2.0,200,5,1,dCor-PP (this thesis),11.6334,0.335403,0.636981,0.045
+single,2024,cubic_p5_s2.0,cubic,2.0,200,5,1,Sheng-Yin (dcsol),11.5066,0.334636,0.636114,0.12
+single,2024,cubic_p20_s2.0,cubic,2.0,200,20,1,dCor-PP (this thesis),29.1141,0.417079,0.721737,0.053
+single,2024,cubic_p20_s2.0,cubic,2.0,200,20,1,Sheng-Yin (dcsol),26.8027,0.409483,0.729055,0.258
+single,2024,tanh_p2_s0.0,tanh,0.0,200,2,1,dCor-PP (this thesis),0.06,0.913167,0.599007,0.035
+single,2024,tanh_p2_s0.0,tanh,0.0,200,2,1,Sheng-Yin (dcsol),0.5112,0.913067,0.598994,0.108
+single,2024,tanh_p5_s0.0,tanh,0.0,200,5,1,dCor-PP (this thesis),3.6092,0.933083,0.642309,0.052
+single,2024,tanh_p5_s0.0,tanh,0.0,200,5,1,Sheng-Yin (dcsol),6.4762,0.929777,0.641182,0.115
+single,2024,tanh_p20_s0.0,tanh,0.0,200,20,1,dCor-PP (this thesis),5.4324,0.937636,0.643886,0.052
+single,2024,tanh_p20_s0.0,tanh,0.0,200,20,1,Sheng-Yin (dcsol),9.7139,0.929381,0.645358,0.281
+single,2024,tanh_p2_s0.5,tanh,0.5,200,2,1,dCor-PP (this thesis),0.5031,0.635254,0.493328,0.028
+single,2024,tanh_p2_s0.5,tanh,0.5,200,2,1,Sheng-Yin (dcsol),0.0045,0.635184,0.493318,0.104
+single,2024,tanh_p5_s0.5,tanh,0.5,200,5,1,dCor-PP (this thesis),8.2234,0.6853,0.526384,0.051
+single,2024,tanh_p5_s0.5,tanh,0.5,200,5,1,Sheng-Yin (dcsol),10.3685,0.683306,0.525448,0.114
+single,2024,tanh_p20_s0.5,tanh,0.5,200,20,1,dCor-PP (this thesis),14.3559,0.718876,0.553243,0.053
+single,2024,tanh_p20_s0.5,tanh,0.5,200,20,1,Sheng-Yin (dcsol),15.0841,0.711362,0.554169,0.256
+single,2024,tanh_p2_s1.0,tanh,1.0,200,2,1,dCor-PP (this thesis),0.4688,0.292278,0.383904,0.033
+single,2024,tanh_p2_s1.0,tanh,1.0,200,2,1,Sheng-Yin (dcsol),0.0901,0.292238,0.383897,0.106
+single,2024,tanh_p5_s1.0,tanh,1.0,200,5,1,dCor-PP (this thesis),14.1969,0.330768,0.4133,0.046
+single,2024,tanh_p5_s1.0,tanh,1.0,200,5,1,Sheng-Yin (dcsol),15.1571,0.330258,0.412771,0.122
+single,2024,tanh_p20_s1.0,tanh,1.0,200,20,1,dCor-PP (this thesis),26.2697,0.418998,0.472664,0.056
+single,2024,tanh_p20_s1.0,tanh,1.0,200,20,1,Sheng-Yin (dcsol),25.5488,0.411511,0.474658,0.338
+single,2024,tanh_p2_s2.0,tanh,2.0,200,2,1,dCor-PP (this thesis),1.0959,0.075653,0.271814,0.022
+single,2024,tanh_p2_s2.0,tanh,2.0,200,2,1,Sheng-Yin (dcsol),1.4431,0.075642,0.271816,0.105
+single,2024,tanh_p5_s2.0,tanh,2.0,200,5,1,dCor-PP (this thesis),33.7639,0.106788,0.318589,0.04
+single,2024,tanh_p5_s2.0,tanh,2.0,200,5,1,Sheng-Yin (dcsol),30.457,0.106384,0.318228,0.112
+single,2024,tanh_p20_s2.0,tanh,2.0,200,20,1,dCor-PP (this thesis),46.2124,0.21232,0.437492,0.048
+single,2024,tanh_p20_s2.0,tanh,2.0,200,20,1,Sheng-Yin (dcsol),45.6147,0.206646,0.442774,0.276
+single,5,square_p2_s0.0,square,0.0,200,2,1,dCor-PP (this thesis),1.4497,0.283515,0.350309,0.04
+single,5,square_p2_s0.0,square,0.0,200,2,1,Sheng-Yin (dcsol),1.1706,0.283492,0.350335,0.104
+single,5,square_p5_s0.0,square,0.0,200,5,1,dCor-PP (this thesis),2.9124,0.29043,0.375421,0.038
+single,5,square_p5_s0.0,square,0.0,200,5,1,Sheng-Yin (dcsol),2.5252,0.290358,0.375571,0.119
+single,5,square_p20_s0.0,square,0.0,200,20,1,dCor-PP (this thesis),11.1339,0.332653,0.477318,0.055
+single,5,square_p20_s0.0,square,0.0,200,20,1,Sheng-Yin (dcsol),8.5478,0.331212,0.479014,0.29
+single,5,square_p2_s0.5,square,0.5,200,2,1,dCor-PP (this thesis),1.0588,0.220215,0.330504,0.029
+single,5,square_p2_s0.5,square,0.5,200,2,1,Sheng-Yin (dcsol),0.7365,0.220203,0.330536,0.106
+single,5,square_p5_s0.5,square,0.5,200,5,1,dCor-PP (this thesis),4.3452,0.25507,0.372594,0.05
+single,5,square_p5_s0.5,square,0.5,200,5,1,Sheng-Yin (dcsol),3.8907,0.254953,0.372673,0.112
+single,5,square_p20_s0.5,square,0.5,200,20,1,dCor-PP (this thesis),15.0052,0.298576,0.463759,0.051
+single,5,square_p20_s0.5,square,0.5,200,20,1,Sheng-Yin (dcsol),11.7771,0.296763,0.466276,0.35
+single,5,square_p2_s1.0,square,1.0,200,2,1,dCor-PP (this thesis),0.5464,0.154359,0.316865,0.033
+single,5,square_p2_s1.0,square,1.0,200,2,1,Sheng-Yin (dcsol),0.4179,0.154355,0.316875,0.104
+single,5,square_p5_s1.0,square,1.0,200,5,1,dCor-PP (this thesis),5.5056,0.191929,0.360518,0.05
+single,5,square_p5_s1.0,square,1.0,200,5,1,Sheng-Yin (dcsol),5.1837,0.191816,0.36083,0.119
+single,5,square_p20_s1.0,square,1.0,200,20,1,dCor-PP (this thesis),18.31,0.240227,0.449189,0.054
+single,5,square_p20_s1.0,square,1.0,200,20,1,Sheng-Yin (dcsol),15.2966,0.238846,0.451802,0.329
+single,5,square_p2_s2.0,square,2.0,200,2,1,dCor-PP (this thesis),0.4109,0.082485,0.300317,0.025
+single,5,square_p2_s2.0,square,2.0,200,2,1,Sheng-Yin (dcsol),0.4652,0.082485,0.300321,0.106
+single,5,square_p5_s2.0,square,2.0,200,5,1,dCor-PP (this thesis),9.1812,0.11325,0.346312,0.042
+single,5,square_p5_s2.0,square,2.0,200,5,1,Sheng-Yin (dcsol),8.4711,0.113183,0.346647,0.118
+single,5,square_p20_s2.0,square,2.0,200,20,1,dCor-PP (this thesis),30.1822,0.157763,0.432618,0.045
+single,5,square_p20_s2.0,square,2.0,200,20,1,Sheng-Yin (dcsol),25.3074,0.156696,0.435678,0.291
+single,5,sine_p2_s0.0,sine,0.0,200,2,1,dCor-PP (this thesis),0.2093,0.028396,0.114865,0.03
+single,5,sine_p2_s0.0,sine,0.0,200,2,1,Sheng-Yin (dcsol),0.2186,0.028396,0.114865,0.104
+single,5,sine_p5_s0.0,sine,0.0,200,5,1,dCor-PP (this thesis),84.3008,0.019989,0.106258,0.03
+single,5,sine_p5_s0.0,sine,0.0,200,5,1,Sheng-Yin (dcsol),66.7902,0.015364,0.100291,0.117
+single,5,sine_p20_s0.0,sine,0.0,200,20,1,dCor-PP (this thesis),79.9909,0.097278,0.193373,0.048
+single,5,sine_p20_s0.0,sine,0.0,200,20,1,Sheng-Yin (dcsol),86.0588,0.105661,0.192542,0.305
+single,5,sine_p2_s0.5,sine,0.5,200,2,1,dCor-PP (this thesis),0.3113,0.009079,0.092068,0.016
+single,5,sine_p2_s0.5,sine,0.5,200,2,1,Sheng-Yin (dcsol),0.323,0.009079,0.092068,0.107
+single,5,sine_p5_s0.5,sine,0.5,200,5,1,dCor-PP (this thesis),38.1819,0.020232,0.110076,0.046
+single,5,sine_p5_s0.5,sine,0.5,200,5,1,Sheng-Yin (dcsol),37.3926,0.020246,0.110147,0.118
+single,5,sine_p20_s0.5,sine,0.5,200,20,1,dCor-PP (this thesis),85.0913,0.142189,0.235729,0.045
+single,5,sine_p20_s0.5,sine,0.5,200,20,1,Sheng-Yin (dcsol),88.5762,0.139291,0.235613,0.362
+single,5,sine_p2_s1.0,sine,1.0,200,2,1,dCor-PP (this thesis),1.0829,0.002501,0.09246,0.017
+single,5,sine_p2_s1.0,sine,1.0,200,2,1,Sheng-Yin (dcsol),1.1339,0.002501,0.09246,0.108
+single,5,sine_p5_s1.0,sine,1.0,200,5,1,dCor-PP (this thesis),38.7158,0.026777,0.136353,0.036
+single,5,sine_p5_s1.0,sine,1.0,200,5,1,Sheng-Yin (dcsol),38.7156,0.026762,0.136518,0.117
+single,5,sine_p20_s1.0,sine,1.0,200,20,1,dCor-PP (this thesis),85.2528,0.146818,0.28201,0.045
+single,5,sine_p20_s1.0,sine,1.0,200,20,1,Sheng-Yin (dcsol),84.8959,0.145635,0.281414,0.339
+single,5,sine_p2_s2.0,sine,2.0,200,2,1,dCor-PP (this thesis),1.7622,0.002624,0.120615,0.02
+single,5,sine_p2_s2.0,sine,2.0,200,2,1,Sheng-Yin (dcsol),1.8105,0.002624,0.120614,0.107
+single,5,sine_p5_s2.0,sine,2.0,200,5,1,dCor-PP (this thesis),38.1272,0.02902,0.182021,0.027
+single,5,sine_p5_s2.0,sine,2.0,200,5,1,Sheng-Yin (dcsol),38.1958,0.029046,0.182227,0.119
+single,5,sine_p20_s2.0,sine,2.0,200,20,1,dCor-PP (this thesis),83.4814,0.130761,0.346088,0.043
+single,5,sine_p20_s2.0,sine,2.0,200,20,1,Sheng-Yin (dcsol),86.1928,0.127792,0.349805,0.282
+single,5,abs_p2_s0.0,abs,0.0,200,2,1,dCor-PP (this thesis),0.7137,0.31278,0.269642,0.038
+single,5,abs_p2_s0.0,abs,0.0,200,2,1,Sheng-Yin (dcsol),0.616,0.312774,0.269648,0.102
+single,5,abs_p5_s0.0,abs,0.0,200,5,1,dCor-PP (this thesis),2.5839,0.30375,0.276489,0.037
+single,5,abs_p5_s0.0,abs,0.0,200,5,1,Sheng-Yin (dcsol),2.2973,0.303672,0.276601,0.119
+single,5,abs_p20_s0.0,abs,0.0,200,20,1,dCor-PP (this thesis),7.9602,0.334045,0.325299,0.048
+single,5,abs_p20_s0.0,abs,0.0,200,20,1,Sheng-Yin (dcsol),6.1992,0.332903,0.326163,0.326
+single,5,abs_p2_s0.5,abs,0.5,200,2,1,dCor-PP (this thesis),0.3437,0.179938,0.243984,0.037
+single,5,abs_p2_s0.5,abs,0.5,200,2,1,Sheng-Yin (dcsol),0.1935,0.179933,0.243993,0.105
+single,5,abs_p5_s0.5,abs,0.5,200,5,1,dCor-PP (this thesis),5.6402,0.203227,0.262877,0.039
+single,5,abs_p5_s0.5,abs,0.5,200,5,1,Sheng-Yin (dcsol),5.1747,0.203111,0.263046,0.115
+single,5,abs_p20_s0.5,abs,0.5,200,20,1,dCor-PP (this thesis),13.2138,0.225214,0.302038,0.052
+single,5,abs_p20_s0.5,abs,0.5,200,20,1,Sheng-Yin (dcsol),11.0351,0.224004,0.302816,0.314
+single,5,abs_p2_s1.0,abs,1.0,200,2,1,dCor-PP (this thesis),0.5422,0.093379,0.223934,0.03
+single,5,abs_p2_s1.0,abs,1.0,200,2,1,Sheng-Yin (dcsol),0.5853,0.093379,0.223936,0.104
+single,5,abs_p5_s1.0,abs,1.0,200,5,1,dCor-PP (this thesis),8.6755,0.112814,0.241524,0.045
+single,5,abs_p5_s1.0,abs,1.0,200,5,1,Sheng-Yin (dcsol),8.2668,0.112759,0.241672,0.121
+single,5,abs_p20_s1.0,abs,1.0,200,20,1,dCor-PP (this thesis),64.8107,0.132523,0.277781,0.047
+single,5,abs_p20_s1.0,abs,1.0,200,20,1,Sheng-Yin (dcsol),23.9027,0.133935,0.282319,0.315
+single,5,abs_p2_s2.0,abs,2.0,200,2,1,dCor-PP (this thesis),0.847,0.042109,0.21637,0.029
+single,5,abs_p2_s2.0,abs,2.0,200,2,1,Sheng-Yin (dcsol),0.8928,0.042108,0.216372,0.104
+single,5,abs_p5_s2.0,abs,2.0,200,5,1,dCor-PP (this thesis),16.1644,0.055688,0.235829,0.046
+single,5,abs_p5_s2.0,abs,2.0,200,5,1,Sheng-Yin (dcsol),15.9571,0.055671,0.235904,0.123
+single,5,abs_p20_s2.0,abs,2.0,200,20,1,dCor-PP (this thesis),86.0283,0.128548,0.333902,0.057
+single,5,abs_p20_s2.0,abs,2.0,200,20,1,Sheng-Yin (dcsol),68.7682,0.127022,0.358178,0.368
+single,5,cubic_p2_s0.0,cubic,0.0,200,2,1,dCor-PP (this thesis),1.5015,0.714553,0.673231,0.039
+single,5,cubic_p2_s0.0,cubic,0.0,200,2,1,Sheng-Yin (dcsol),1.0238,0.71447,0.67332,0.104
+single,5,cubic_p5_s0.0,cubic,0.0,200,5,1,dCor-PP (this thesis),2.666,0.737778,0.751448,0.048
+single,5,cubic_p5_s0.0,cubic,0.0,200,5,1,Sheng-Yin (dcsol),1.9657,0.73702,0.752285,0.117
+single,5,cubic_p20_s0.0,cubic,0.0,200,20,1,dCor-PP (this thesis),9.9925,0.747703,0.967029,0.054
+single,5,cubic_p20_s0.0,cubic,0.0,200,20,1,Sheng-Yin (dcsol),6.0717,0.741109,0.972654,0.295
+single,5,cubic_p2_s0.5,cubic,0.5,200,2,1,dCor-PP (this thesis),1.5504,0.641097,0.661907,0.037
+single,5,cubic_p2_s0.5,cubic,0.5,200,2,1,Sheng-Yin (dcsol),1.0171,0.641019,0.662011,0.11
+single,5,cubic_p5_s0.5,cubic,0.5,200,5,1,dCor-PP (this thesis),2.9069,0.629733,0.712622,0.045
+single,5,cubic_p5_s0.5,cubic,0.5,200,5,1,Sheng-Yin (dcsol),2.1381,0.629239,0.713331,0.123
+single,5,cubic_p20_s0.5,cubic,0.5,200,20,1,dCor-PP (this thesis),13.4655,0.705696,0.948031,0.054
+single,5,cubic_p20_s0.5,cubic,0.5,200,20,1,Sheng-Yin (dcsol),8.8198,0.698781,0.953345,0.301
+single,5,cubic_p2_s1.0,cubic,1.0,200,2,1,dCor-PP (this thesis),1.3817,0.519877,0.648059,0.038
+single,5,cubic_p2_s1.0,cubic,1.0,200,2,1,Sheng-Yin (dcsol),0.7167,0.519787,0.64818,0.106
+single,5,cubic_p5_s1.0,cubic,1.0,200,5,1,dCor-PP (this thesis),3.6002,0.507553,0.676273,0.045
+single,5,cubic_p5_s1.0,cubic,1.0,200,5,1,Sheng-Yin (dcsol),3.2808,0.507321,0.676655,0.122
+single,5,cubic_p20_s1.0,cubic,1.0,200,20,1,dCor-PP (this thesis),17.0452,0.642082,0.92944,0.054
+single,5,cubic_p20_s1.0,cubic,1.0,200,20,1,Sheng-Yin (dcsol),12.5513,0.63472,0.935902,0.295
+single,5,cubic_p2_s2.0,cubic,2.0,200,2,1,dCor-PP (this thesis),1.1139,0.338314,0.627644,0.038
+single,5,cubic_p2_s2.0,cubic,2.0,200,2,1,Sheng-Yin (dcsol),0.4746,0.338267,0.627764,0.103
+single,5,cubic_p5_s2.0,cubic,2.0,200,5,1,dCor-PP (this thesis),5.4128,0.330834,0.629352,0.042
+single,5,cubic_p5_s2.0,cubic,2.0,200,5,1,Sheng-Yin (dcsol),4.7244,0.330644,0.630005,0.115
+single,5,cubic_p20_s2.0,cubic,2.0,200,20,1,dCor-PP (this thesis),23.636,0.515505,0.907877,0.05
+single,5,cubic_p20_s2.0,cubic,2.0,200,20,1,Sheng-Yin (dcsol),19.8522,0.510687,0.913123,0.392
+single,5,tanh_p2_s0.0,tanh,0.0,200,2,1,dCor-PP (this thesis),0.8682,0.93654,0.588876,0.036
+single,5,tanh_p2_s0.0,tanh,0.0,200,2,1,Sheng-Yin (dcsol),1.0241,0.936525,0.588897,0.106
+single,5,tanh_p5_s0.0,tanh,0.0,200,5,1,dCor-PP (this thesis),1.8043,0.931966,0.633972,0.051
+single,5,tanh_p5_s0.0,tanh,0.0,200,5,1,Sheng-Yin (dcsol),3.1877,0.930741,0.635063,0.124
+single,5,tanh_p20_s0.0,tanh,0.0,200,20,1,dCor-PP (this thesis),5.153,0.920497,0.673882,0.053
+single,5,tanh_p20_s0.0,tanh,0.0,200,20,1,Sheng-Yin (dcsol),9.4814,0.911621,0.675327,0.282
+single,5,tanh_p2_s0.5,tanh,0.5,200,2,1,dCor-PP (this thesis),0.9358,0.674236,0.519435,0.038
+single,5,tanh_p2_s0.5,tanh,0.5,200,2,1,Sheng-Yin (dcsol),1.191,0.674215,0.519467,0.104
+single,5,tanh_p5_s0.5,tanh,0.5,200,5,1,dCor-PP (this thesis),4.8663,0.721671,0.527823,0.046
+single,5,tanh_p5_s0.5,tanh,0.5,200,5,1,Sheng-Yin (dcsol),5.2995,0.721015,0.528276,0.117
+single,5,tanh_p20_s0.5,tanh,0.5,200,20,1,dCor-PP (this thesis),13.9581,0.735718,0.58833,0.053
+single,5,tanh_p20_s0.5,tanh,0.5,200,20,1,Sheng-Yin (dcsol),13.649,0.726826,0.590333,0.273
+single,5,tanh_p2_s1.0,tanh,1.0,200,2,1,dCor-PP (this thesis),1.031,0.38681,0.452808,0.034
+single,5,tanh_p2_s1.0,tanh,1.0,200,2,1,Sheng-Yin (dcsol),1.2166,0.386799,0.452829,0.103
+single,5,tanh_p5_s1.0,tanh,1.0,200,5,1,dCor-PP (this thesis),8.9621,0.362957,0.414972,0.047
+single,5,tanh_p5_s1.0,tanh,1.0,200,5,1,Sheng-Yin (dcsol),9.3887,0.362836,0.415224,0.11
+single,5,tanh_p20_s1.0,tanh,1.0,200,20,1,dCor-PP (this thesis),23.6036,0.461741,0.512157,0.05
+single,5,tanh_p20_s1.0,tanh,1.0,200,20,1,Sheng-Yin (dcsol),21.5879,0.456321,0.515757,0.272
+single,5,tanh_p2_s2.0,tanh,2.0,200,2,1,dCor-PP (this thesis),1.1312,0.166378,0.389301,0.038
+single,5,tanh_p2_s2.0,tanh,2.0,200,2,1,Sheng-Yin (dcsol),1.5489,0.166362,0.389338,0.119
+single,5,tanh_p5_s2.0,tanh,2.0,200,5,1,dCor-PP (this thesis),14.4439,0.107535,0.305003,0.05
+single,5,tanh_p5_s2.0,tanh,2.0,200,5,1,Sheng-Yin (dcsol),14.9212,0.107814,0.305681,0.121
+single,5,tanh_p20_s2.0,tanh,2.0,200,20,1,dCor-PP (this thesis),40.4722,0.245292,0.472343,0.037
+single,5,tanh_p20_s2.0,tanh,2.0,200,20,1,Sheng-Yin (dcsol),42.0044,0.242122,0.475197,0.326
+multi,42,k2_p5_product_noiseless,product,0.0,400,5,2,dCor-PP sequential (X-deflation),3.35,0.148627,0.233635,0.543
+multi,42,k2_p5_product_noiseless,product,0.0,400,5,2,"dCor-PP joint (Stiefel, lam=0)",3.0501,0.147277,0.233906,0.587
+multi,42,k2_p5_product_noiseless,product,0.0,400,5,2,Sheng-Yin (dcsol),2.3854,0.066449,0.233428,1.561
+multi,42,k2_p5_product_noisy,product,0.5,400,5,2,dCor-PP sequential (X-deflation),4.9094,0.095443,0.209861,0.497
+multi,42,k2_p5_product_noisy,product,0.5,400,5,2,"dCor-PP joint (Stiefel, lam=0)",4.797,0.097176,0.20996,0.558
+multi,42,k2_p5_product_noisy,product,0.5,400,5,2,Sheng-Yin (dcsol),3.6825,0.078643,0.209772,2.198
+multi,42,k2_p10_sumSq_noiseless,sum_squares,0.0,400,10,2,dCor-PP sequential (X-deflation),6.5385,0.123642,0.363425,0.566
+multi,42,k2_p10_sumSq_noiseless,sum_squares,0.0,400,10,2,"dCor-PP joint (Stiefel, lam=0)",6.7193,0.125408,0.36506,0.561
+multi,42,k2_p10_sumSq_noiseless,sum_squares,0.0,400,10,2,Sheng-Yin (dcsol),5.3694,0.118208,0.368297,2.881
+multi,42,k2_p10_sumSq_noisy,sum_squares,0.5,400,10,2,dCor-PP sequential (X-deflation),8.4021,0.103878,0.344814,0.55
+multi,42,k2_p10_sumSq_noisy,sum_squares,0.5,400,10,2,"dCor-PP joint (Stiefel, lam=0)",8.1219,0.110681,0.352575,0.558
+multi,42,k2_p10_sumSq_noisy,sum_squares,0.5,400,10,2,Sheng-Yin (dcsol),6.4092,0.10132,0.354676,2.937
+multi,42,k3_p10_sumSq_noiseless,sum_squares,0.0,500,10,3,dCor-PP sequential (X-deflation),6.869,0.079454,0.373538,1.273
+multi,42,k3_p10_sumSq_noiseless,sum_squares,0.0,500,10,3,"dCor-PP joint (Stiefel, lam=0)",5.4361,0.080794,0.373658,1.321
+multi,42,k3_p10_sumSq_noiseless,sum_squares,0.0,500,10,3,Sheng-Yin (dcsol),5.9434,0.077584,0.37751,7.028
+multi,42,k2_p5_sineProd_noiseless,sine_product,0.0,400,5,2,dCor-PP sequential (X-deflation),51.1218,0.002976,0.053377,0.297
+multi,42,k2_p5_sineProd_noiseless,sine_product,0.0,400,5,2,"dCor-PP joint (Stiefel, lam=0)",49.2947,0.00239,0.051479,0.378
+multi,42,k2_p5_sineProd_noiseless,sine_product,0.0,400,5,2,Sheng-Yin (dcsol),35.0462,0.008707,0.056186,2.091
+multi,42,k2_p20_product_noiseless,product,0.0,500,20,2,dCor-PP sequential (X-deflation),45.1169,0.094156,0.191873,0.897
+multi,42,k2_p20_product_noiseless,product,0.0,500,20,2,"dCor-PP joint (Stiefel, lam=0)",11.6772,0.139909,0.224443,0.87
+multi,42,k2_p20_product_noiseless,product,0.0,500,20,2,Sheng-Yin (dcsol),6.3154,0.151353,0.227662,13.231
+multi,7,k2_p5_product_noiseless,product,0.0,400,5,2,dCor-PP sequential (X-deflation),2.9331,0.148253,0.226281,0.45
+multi,7,k2_p5_product_noiseless,product,0.0,400,5,2,"dCor-PP joint (Stiefel, lam=0)",3.2255,0.143079,0.226194,0.566
+multi,7,k2_p5_product_noiseless,product,0.0,400,5,2,Sheng-Yin (dcsol),2.3714,0.087192,0.227678,1.916
+multi,7,k2_p5_product_noisy,product,0.5,400,5,2,dCor-PP sequential (X-deflation),7.1786,0.093043,0.202015,0.484
+multi,7,k2_p5_product_noisy,product,0.5,400,5,2,"dCor-PP joint (Stiefel, lam=0)",7.3297,0.094392,0.201159,0.554
+multi,7,k2_p5_product_noisy,product,0.5,400,5,2,Sheng-Yin (dcsol),5.8157,0.075445,0.203134,2.041
+multi,7,k2_p10_sumSq_noiseless,sum_squares,0.0,400,10,2,dCor-PP sequential (X-deflation),4.6371,0.157343,0.415088,0.62
+multi,7,k2_p10_sumSq_noiseless,sum_squares,0.0,400,10,2,"dCor-PP joint (Stiefel, lam=0)",5.6364,0.149736,0.407434,0.552
+multi,7,k2_p10_sumSq_noiseless,sum_squares,0.0,400,10,2,Sheng-Yin (dcsol),4.3741,0.128165,0.406913,3.82
+multi,7,k2_p10_sumSq_noisy,sum_squares,0.5,400,10,2,dCor-PP sequential (X-deflation),5.7513,0.139262,0.392252,0.575
+multi,7,k2_p10_sumSq_noisy,sum_squares,0.5,400,10,2,"dCor-PP joint (Stiefel, lam=0)",6.742,0.133202,0.386203,0.57
+multi,7,k2_p10_sumSq_noisy,sum_squares,0.5,400,10,2,Sheng-Yin (dcsol),5.3983,0.11513,0.386121,2.705
+multi,7,k3_p10_sumSq_noiseless,sum_squares,0.0,500,10,3,dCor-PP sequential (X-deflation),6.3481,0.097239,0.413337,1.316
+multi,7,k3_p10_sumSq_noiseless,sum_squares,0.0,500,10,3,"dCor-PP joint (Stiefel, lam=0)",6.1388,0.089003,0.410919,1.296
+multi,7,k3_p10_sumSq_noiseless,sum_squares,0.0,500,10,3,Sheng-Yin (dcsol),5.9539,0.095046,0.414692,6.956
+multi,7,k2_p5_sineProd_noiseless,sine_product,0.0,400,5,2,dCor-PP sequential (X-deflation),76.9055,0.006891,0.060001,0.31
+multi,7,k2_p5_sineProd_noiseless,sine_product,0.0,400,5,2,"dCor-PP joint (Stiefel, lam=0)",3.0412,0.01737,0.064664,0.512
+multi,7,k2_p5_sineProd_noiseless,sine_product,0.0,400,5,2,Sheng-Yin (dcsol),67.0146,0.003053,0.06204,1.803
+multi,7,k2_p20_product_noiseless,product,0.0,500,20,2,dCor-PP sequential (X-deflation),8.8087,0.150971,0.212387,0.985
+multi,7,k2_p20_product_noiseless,product,0.0,500,20,2,"dCor-PP joint (Stiefel, lam=0)",21.6679,0.112774,0.18924,0.88
+multi,7,k2_p20_product_noiseless,product,0.0,500,20,2,Sheng-Yin (dcsol),6.4789,0.152298,0.217524,10.933
+multi,123,k2_p5_product_noiseless,product,0.0,400,5,2,dCor-PP sequential (X-deflation),2.7189,0.128435,0.226649,0.491
+multi,123,k2_p5_product_noiseless,product,0.0,400,5,2,"dCor-PP joint (Stiefel, lam=0)",1.8796,0.135603,0.22782,0.498
+multi,123,k2_p5_product_noiseless,product,0.0,400,5,2,Sheng-Yin (dcsol),2.1166,0.138821,0.223813,2.008
+multi,123,k2_p5_product_noisy,product,0.5,400,5,2,dCor-PP sequential (X-deflation),5.0342,0.094319,0.205875,0.515
+multi,123,k2_p5_product_noisy,product,0.5,400,5,2,"dCor-PP joint (Stiefel, lam=0)",5.5252,0.086873,0.206118,0.564
+multi,123,k2_p5_product_noisy,product,0.5,400,5,2,Sheng-Yin (dcsol),4.7532,0.079083,0.20186,1.877
+multi,123,k2_p10_sumSq_noiseless,sum_squares,0.0,400,10,2,dCor-PP sequential (X-deflation),7.0902,0.12539,0.386592,0.454
+multi,123,k2_p10_sumSq_noiseless,sum_squares,0.0,400,10,2,"dCor-PP joint (Stiefel, lam=0)",8.2873,0.122664,0.38582,0.565
+multi,123,k2_p10_sumSq_noiseless,sum_squares,0.0,400,10,2,Sheng-Yin (dcsol),5.911,0.116035,0.383794,3.126
+multi,123,k2_p10_sumSq_noisy,sum_squares,0.5,400,10,2,dCor-PP sequential (X-deflation),7.3931,0.117124,0.378112,0.537
+multi,123,k2_p10_sumSq_noisy,sum_squares,0.5,400,10,2,"dCor-PP joint (Stiefel, lam=0)",7.3025,0.116983,0.375603,0.54
+multi,123,k2_p10_sumSq_noisy,sum_squares,0.5,400,10,2,Sheng-Yin (dcsol),6.625,0.110333,0.372717,2.827
+multi,123,k3_p10_sumSq_noiseless,sum_squares,0.0,500,10,3,dCor-PP sequential (X-deflation),7.9848,0.082199,0.411524,1.234
+multi,123,k3_p10_sumSq_noiseless,sum_squares,0.0,500,10,3,"dCor-PP joint (Stiefel, lam=0)",6.2203,0.082561,0.412494,1.329
+multi,123,k3_p10_sumSq_noiseless,sum_squares,0.0,500,10,3,Sheng-Yin (dcsol),6.0844,0.077228,0.407923,6.55
+multi,123,k2_p5_sineProd_noiseless,sine_product,0.0,400,5,2,dCor-PP sequential (X-deflation),45.2146,0.019736,0.081227,0.405
+multi,123,k2_p5_sineProd_noiseless,sine_product,0.0,400,5,2,"dCor-PP joint (Stiefel, lam=0)",44.5776,0.017432,0.085459,0.536
+multi,123,k2_p5_sineProd_noiseless,sine_product,0.0,400,5,2,Sheng-Yin (dcsol),32.415,0.018203,0.085343,2.051
+multi,123,k2_p20_product_noiseless,product,0.0,500,20,2,dCor-PP sequential (X-deflation),7.2184,0.152044,0.22853,1.058
+multi,123,k2_p20_product_noiseless,product,0.0,500,20,2,"dCor-PP joint (Stiefel, lam=0)",21.1986,0.117934,0.210355,0.884
+multi,123,k2_p20_product_noiseless,product,0.0,500,20,2,Sheng-Yin (dcsol),5.9443,0.056572,0.231738,12.648
+multi,2024,k2_p5_product_noiseless,product,0.0,400,5,2,dCor-PP sequential (X-deflation),2.3897,0.149713,0.230749,0.557
+multi,2024,k2_p5_product_noiseless,product,0.0,400,5,2,"dCor-PP joint (Stiefel, lam=0)",2.5331,0.155058,0.230998,0.525
+multi,2024,k2_p5_product_noiseless,product,0.0,400,5,2,Sheng-Yin (dcsol),1.787,0.045629,0.23068,1.919
+multi,2024,k2_p5_product_noisy,product,0.5,400,5,2,dCor-PP sequential (X-deflation),3.8504,0.095137,0.200495,0.444
+multi,2024,k2_p5_product_noisy,product,0.5,400,5,2,"dCor-PP joint (Stiefel, lam=0)",3.8365,0.099357,0.200967,0.556
+multi,2024,k2_p5_product_noisy,product,0.5,400,5,2,Sheng-Yin (dcsol),2.8245,0.035048,0.201093,1.672
+multi,2024,k2_p10_sumSq_noiseless,sum_squares,0.0,400,10,2,dCor-PP sequential (X-deflation),7.1388,0.134472,0.391679,0.563
+multi,2024,k2_p10_sumSq_noiseless,sum_squares,0.0,400,10,2,"dCor-PP joint (Stiefel, lam=0)",6.466,0.131175,0.390552,0.559
+multi,2024,k2_p10_sumSq_noiseless,sum_squares,0.0,400,10,2,Sheng-Yin (dcsol),5.3681,0.128565,0.392693,3.662
+multi,2024,k2_p10_sumSq_noisy,sum_squares,0.5,400,10,2,dCor-PP sequential (X-deflation),8.337,0.116411,0.37128,0.594
+multi,2024,k2_p10_sumSq_noisy,sum_squares,0.5,400,10,2,"dCor-PP joint (Stiefel, lam=0)",7.0408,0.117002,0.372323,0.568
+multi,2024,k2_p10_sumSq_noisy,sum_squares,0.5,400,10,2,Sheng-Yin (dcsol),6.2893,0.115234,0.37367,3.037
+multi,2024,k3_p10_sumSq_noiseless,sum_squares,0.0,500,10,3,dCor-PP sequential (X-deflation),7.1123,0.088529,0.411555,1.396
+multi,2024,k3_p10_sumSq_noiseless,sum_squares,0.0,500,10,3,"dCor-PP joint (Stiefel, lam=0)",8.1633,0.085254,0.408239,1.302
+multi,2024,k3_p10_sumSq_noiseless,sum_squares,0.0,500,10,3,Sheng-Yin (dcsol),5.0734,0.088427,0.411278,6.885
+multi,2024,k2_p5_sineProd_noiseless,sine_product,0.0,400,5,2,dCor-PP sequential (X-deflation),77.2505,0.007563,0.063618,0.289
+multi,2024,k2_p5_sineProd_noiseless,sine_product,0.0,400,5,2,"dCor-PP joint (Stiefel, lam=0)",42.3243,0.013967,0.066405,0.466
+multi,2024,k2_p5_sineProd_noiseless,sine_product,0.0,400,5,2,Sheng-Yin (dcsol),62.6123,0.003341,0.0627,2.181
+multi,2024,k2_p20_product_noiseless,product,0.0,500,20,2,dCor-PP sequential (X-deflation),9.2763,0.161729,0.250938,1.012
+multi,2024,k2_p20_product_noiseless,product,0.0,500,20,2,"dCor-PP joint (Stiefel, lam=0)",9.6642,0.162322,0.250836,0.876
+multi,2024,k2_p20_product_noiseless,product,0.0,500,20,2,Sheng-Yin (dcsol),6.9145,0.082522,0.248391,12.253
+multi,5,k2_p5_product_noiseless,product,0.0,400,5,2,dCor-PP sequential (X-deflation),5.706,0.151589,0.243243,0.532
+multi,5,k2_p5_product_noiseless,product,0.0,400,5,2,"dCor-PP joint (Stiefel, lam=0)",6.5907,0.147441,0.243213,0.456
+multi,5,k2_p5_product_noiseless,product,0.0,400,5,2,Sheng-Yin (dcsol),5.032,0.153053,0.242713,1.8
+multi,5,k2_p5_product_noisy,product,0.5,400,5,2,dCor-PP sequential (X-deflation),10.1558,0.106735,0.224398,0.472
+multi,5,k2_p5_product_noisy,product,0.5,400,5,2,"dCor-PP joint (Stiefel, lam=0)",10.2501,0.10411,0.223453,0.546
+multi,5,k2_p5_product_noisy,product,0.5,400,5,2,Sheng-Yin (dcsol),9.5562,0.100552,0.223058,1.908
+multi,5,k2_p10_sumSq_noiseless,sum_squares,0.0,400,10,2,dCor-PP sequential (X-deflation),6.1695,0.141298,0.410395,0.549
+multi,5,k2_p10_sumSq_noiseless,sum_squares,0.0,400,10,2,"dCor-PP joint (Stiefel, lam=0)",8.9591,0.130365,0.406549,0.552
+multi,5,k2_p10_sumSq_noiseless,sum_squares,0.0,400,10,2,Sheng-Yin (dcsol),5.2158,0.123584,0.405414,3.612
+multi,5,k2_p10_sumSq_noisy,sum_squares,0.5,400,10,2,dCor-PP sequential (X-deflation),6.5327,0.115502,0.390898,0.611
+multi,5,k2_p10_sumSq_noisy,sum_squares,0.5,400,10,2,"dCor-PP joint (Stiefel, lam=0)",6.9143,0.113913,0.393468,0.56
+multi,5,k2_p10_sumSq_noisy,sum_squares,0.5,400,10,2,Sheng-Yin (dcsol),5.6583,0.111635,0.392149,1.856
+multi,5,k3_p10_sumSq_noiseless,sum_squares,0.0,500,10,3,dCor-PP sequential (X-deflation),9.7946,0.087264,0.4099,1.311
+multi,5,k3_p10_sumSq_noiseless,sum_squares,0.0,500,10,3,"dCor-PP joint (Stiefel, lam=0)",7.6707,0.088808,0.413934,1.326
+multi,5,k3_p10_sumSq_noiseless,sum_squares,0.0,500,10,3,Sheng-Yin (dcsol),6.0537,0.082065,0.412089,7.81
+multi,5,k2_p5_sineProd_noiseless,sine_product,0.0,400,5,2,dCor-PP sequential (X-deflation),54.2004,0.00765,0.06807,0.339
+multi,5,k2_p5_sineProd_noiseless,sine_product,0.0,400,5,2,"dCor-PP joint (Stiefel, lam=0)",38.616,0.008273,0.070758,0.528
+multi,5,k2_p5_sineProd_noiseless,sine_product,0.0,400,5,2,Sheng-Yin (dcsol),37.7038,0.00959,0.071832,1.872
+multi,5,k2_p20_product_noiseless,product,0.0,500,20,2,dCor-PP sequential (X-deflation),6.6624,0.154155,0.237474,0.98
+multi,5,k2_p20_product_noiseless,product,0.0,500,20,2,"dCor-PP joint (Stiefel, lam=0)",6.1114,0.144957,0.236525,0.886
+multi,5,k2_p20_product_noiseless,product,0.0,500,20,2,Sheng-Yin (dcsol),5.2396,0.074266,0.235807,13.148

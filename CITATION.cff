@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the thesis it accompanies."
+type: software
+title: "Projection pursuit with distance-based dependence measures: reproduction code"
+version: 1.0.0
+# TODO: fill in before publication.
+authors:
+  - family-names: "<FAMILY NAME>"
+    given-names: "<GIVEN NAME>"
+    email: "e11776651@student.tuwien.ac.at"
+    affiliation: "TU Wien"
+license: MIT
+repository-code: "<REPOSITORY URL>"
+references:
+  - type: thesis
+    title: "<THESIS TITLE>"
+    thesis-type: "Diploma thesis"
+    institution:
+      name: "TU Wien"
+    # TODO: year of submission.
+    year: 2026
+    authors:
+      - family-names: "<FAMILY NAME>"
+        given-names: "<GIVEN NAME>"
